@@ -33,11 +33,22 @@
 | Art. L. 5421-1 Code du travail | Droit à l'ARE |
 | Art. 13 DDHC 1789 | Égalité devant les charges publiques |
 
+## Textes de loi cités (ajouts DRFIP R1)
+
+| Texte | Objet dans le débat |
+|-------|---------------------|
+| Art. L. 136-1-1 CSS | CSG sur les revenus d'activité salariée — champ d'application |
+| Art. L. 242-1 CSS | Assiette des cotisations du régime général (salariés et assimilés) |
+| Art. 151-0 CGI | Versement libératoire de l'IR pour les micro-entrepreneurs — conditions d'éligibilité (RFR) |
+| Art. 10 CGI | Domicile fiscal — obligations déclaratives |
+| Art. 60 CGI | Détermination du bénéfice de l'exploitant individuel (applicable via 239 bis AB) |
+| Ordonnance n° 96-50 du 24 janvier 1996, art. 15 | CRDS — assiette et taux (0,5 %) |
+
 ## Jurisprudence citée
 
 | Décision | Objet |
 |----------|-------|
 | CE, 3 février 2021, n° 429882 | BNC sans cotisation sociale → CSG patrimoniale |
 | CE, 2 avril 2021, n° 428084 | BA sans cotisation sociale → CSG patrimoniale |
-| CE, 20 octobre 2021, n° 440375 | SELAS — distinction revenus distribués ≷ 10 % capital |
+| CE, 20 octobre 2021, n° 440375 | SELAS — distinction revenus distribués ≷ 10 % capital — analyse flux par flux |
 | CC, 13 décembre 2012, n° 2012-659 DC | Contributions sociales et principe d'égalité |
