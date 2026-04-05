@@ -849,3 +849,272 @@ Pour la Directrice régionale des Finances publiques,
 L'inspectrice divisionnaire des Finances publiques,
 
 Annick LOUBIÈRE
+
+---
+
+# [Avocat] Réplique finale — Égalité devant les charges publiques et réserve de QPC — 2026-04-05
+
+Madame l'Inspectrice divisionnaire,
+
+Le contribuable a pris connaissance de votre contre-réplique. Le débat, utilement resserré par les échanges successifs, peut être clos au stade administratif. Le contribuable formule ses observations finales.
+
+---
+
+## I. CONCESSION — LA CLAUSE D'EXCEPTION N'EST PAS UNE CLAUSE MORTE
+
+Le contribuable prend acte de la démonstration de l'administration au § I de sa contre-réplique. La clause d'exception de l'article L. 136-6, I, f) du CSS produit un plein effet pour les entrepreneurs individuels, les gérants majoritaires de SARL, les exploitants agricoles, les associés exerçants de SELAS et les présidents rémunérés de SAS. L'argument tiré de la « lettre morte » est **abandonné**.
+
+Le principe d'effet utile n'impose pas qu'une clause s'applique à toute configuration. Ce point est concédé.
+
+**Toutefois, la question n'est pas — et n'a jamais été — de savoir si la clause produit un effet quelque part.** La question est de savoir si le **résultat** que produit l'article L. 136-6 lorsqu'il s'applique au BIC d'un président de SAS à l'IR — 17,2 % de prélèvements sociaux patrimoniaux sur un revenu issu du travail personnel, sans aucune contrepartie en droits sociaux — est **conforme au principe constitutionnel d'égalité devant les charges publiques**.
+
+C'est sur ce terrain que le contribuable porte désormais le débat.
+
+---
+
+## II. L'ÉGALITÉ DEVANT LES CHARGES PUBLIQUES (ART. 13 DE LA DÉCLARATION DE 1789)
+
+### A. Le comparateur
+
+Soient deux contribuables exerçant une activité identique — du consulting informatique — personnellement, directement et de manière continue, générant un bénéfice annuel comparable :
+
+| | **Contribuable A** | **Contribuable B** |
+|---|---|---|
+| Structure | EURL, gérant majoritaire | SAS, président |
+| Régime fiscal | Option IR (art. 239 bis AB CGI) | Option IR (art. 239 bis AB CGI) |
+| Catégorie de revenu | BIC | BIC |
+| Régime social | TNS — cotisations ~45 % | Aucun (non rémunéré) |
+| Prélèvements sociaux sur le BIC | CSG d'activité 9,2 % (incluse dans les cotisations TNS) — **exclu de L. 136-6** | CSG patrimoniale 9,2 % + CRDS 0,5 % + PS 7,5 % = **17,2 % via L. 136-6** |
+| Droits sociaux acquis | Retraite de base et complémentaire, assurance maladie, indemnités journalières, allocations familiales, invalidité-décès | **Aucun** |
+
+Le contribuable A, en EURL, supporte une charge sociale plus lourde (~45 %) mais acquiert des **droits sociaux complets** — retraite, maladie, prévoyance. Son BIC bénéficie de la clause d'exception de L. 136-6, I, f).
+
+Le contribuable B, en SAS, supporte 17,2 % de prélèvements patrimoniaux et n'acquiert **aucun droit social** en contrepartie. Ni trimestre de retraite, ni couverture maladie, ni prévoyance, ni indemnité journalière. Le prélèvement est **exclusivement fiscal** dans ses effets.
+
+**Le travail est le même. Le revenu est de même nature (BIC). L'imposition à l'IR est identique. Seule la forme sociale diffère.**
+
+### B. Ce que dit réellement la décision CC n° 2012-659 DC du 13 décembre 2012
+
+L'administration invoque cette décision (§ VII.6 de sa contre-réplique) pour affirmer que « *l'article L. 136-6 ne crée pas une inégalité de traitement entre contribuables placés dans la même situation, mais une différence de traitement entre revenus de natures différentes* ».
+
+Le contribuable invite l'administration à relire cette décision dans son intégralité. Le Conseil constitutionnel y rappelle le cadre suivant :
+
+1. Le principe d'égalité devant les charges publiques (art. 13 DDHC) **ne s'oppose pas** à ce que le législateur applique des taux différents de contributions sociales à des catégories de revenus distinctes ;
+2. **Mais** cette différenciation n'est conforme à la Constitution que si elle repose sur des **critères objectifs et rationnels en rapport direct avec l'objet de la loi** ;
+3. L'objet des contributions sociales est le **financement de la protection sociale**.
+
+Or, pour le financement de la protection sociale, le critère pertinent est la **nature économique de l'activité génératrice du revenu** — travail personnel ou rendement du capital — et non la **forme juridique** de la structure à travers laquelle cette activité est exercée.
+
+Le BIC du contribuable A (EURL) et le BIC du contribuable B (SAS) sont des revenus de **même nature économique** : ils résultent du même travail (consulting IT), exercé par la même catégorie de personne (dirigeant-associé unique ou quasi-unique exerçant l'activité), dans le même cadre fiscal (IR, catégorie BIC).
+
+Le seul élément qui diffère — la forme sociale — n'est pas un « critère objectif et rationnel en rapport direct avec l'objet de la loi » de financement de la sécurité sociale. C'est un critère **purement formel**, sans lien avec la nature du travail accompli ni avec la finalité de la protection sociale.
+
+### C. Le prélèvement de solidarité de 7,5 % est une contribution à finalité patrimoniale
+
+L'article 235 ter du CGI institue le prélèvement de solidarité de 7,5 % sur les revenus du patrimoine et les produits de placement, « *dans les conditions et selon les modalités prévues aux articles L. 136-6 à L. 136-7-1 du code de la sécurité sociale* ».
+
+Ce prélèvement a été conçu par le législateur pour frapper des **revenus passifs** : dividendes, intérêts, plus-values, revenus fonciers. Son application à des bénéfices issus du travail personnel — par le seul jeu d'une classification résiduelle sous L. 136-6 — est **contraire à l'intention du législateur** telle qu'elle résulte des travaux préparatoires de la loi n° 2012-1404 du 17 décembre 2012.
+
+L'administration reconnaît (§ VII.C de sa première réponse) que la contestation du prélèvement de solidarité revient à contester la qualification patrimoniale du BIC. C'est précisément ce que le contribuable fait — et la question constitutionnelle porte exactement sur cette qualification.
+
+### D. Le « choix » de la forme sociale ne justifie pas une rupture d'égalité
+
+L'administration soutient (§ II.A de sa contre-réplique) que la situation résulte de « *trois choix juridiques volontaires* » du contribuable : le choix de la SAS, le choix de l'absence de rémunération, et l'option IR.
+
+Le contribuable oppose :
+
+**1°** Le choix de la forme sociale est un exercice de la **liberté d'entreprendre**, composante de la liberté proclamée par l'article 4 de la Déclaration de 1789 et consacrée par le Conseil constitutionnel comme liberté à valeur constitutionnelle (CC, 16 janvier 1982, n° 81-132 DC). L'exercice d'une liberté constitutionnelle ne saurait fonder un traitement contributif défavorable.
+
+**2°** Le Conseil constitutionnel a jugé que le législateur ne peut porter une atteinte disproportionnée à la liberté d'entreprendre en imposant des charges qui n'ont aucun lien avec l'objectif poursuivi (CC, 16 janvier 2001, n° 2000-439 DC). Or, soumettre un BIC d'activité professionnelle au prélèvement de solidarité de 7,5 % — contribution conçue pour le patrimoine passif — en raison du seul choix de la forme SAS, constitue une charge **sans lien avec l'objectif de financement de la protection sociale**.
+
+**3°** L'argument du « choix » est **circulaire** : le gérant d'EURL n'est pas mieux traité parce qu'il a fait un « bon choix » — il l'est parce que le législateur a prévu un mécanisme de collecte des cotisations TNS. L'absence de mécanisme équivalent pour la SAS à l'IR n'est pas une sanction voulue par le législateur mais une lacune.
+
+---
+
+## III. L'IMPOSSIBILITÉ STRUCTURELLE DEMEURE PERTINENTE — COMME CONTEXTE
+
+Le contribuable concède que l'impossibilité structurelle ne suffit pas, à elle seule, à rendre la clause d'exception inapplicable. La clause produit un effet dans d'autres configurations.
+
+Toutefois, l'impossibilité structurelle **reste pertinente comme élément de contexte** de l'argument constitutionnel. Elle démontre que :
+
+- la classification patrimoniale du BIC de la SAS à l'IR n'est pas le résultat d'un **choix législatif délibéré** mais d'une **lacune systémique** ;
+- aucune alternative contributive n'existe pour le contribuable ;
+- l'administration elle-même reconnaît (§ VII de sa contre-réplique) que cette configuration « *soulève une question juridique réelle* » et qu'aucune instruction administrative ne la traite.
+
+Ce contexte renforce le caractère sérieux de la question constitutionnelle.
+
+---
+
+## IV. RÉSERVE FORMELLE DE QUESTION PRIORITAIRE DE CONSTITUTIONNALITÉ
+
+Conformément à l'article 61-1 de la Constitution et à l'article 23-1 de l'ordonnance n° 58-1067 du 7 novembre 1958 portant loi organique sur le Conseil constitutionnel, le contribuable **se réserve expressément** la faculté de soulever, devant le tribunal administratif compétent, une **question prioritaire de constitutionnalité** portant sur la conformité aux droits et libertés garantis par la Constitution — et notamment au **principe d'égalité devant les charges publiques** (art. 13 DDHC) et à la **liberté d'entreprendre** (art. 4 DDHC) — de l'article L. 136-6, I, f) du code de la sécurité sociale, **en tant qu'il soumet aux prélèvements sociaux patrimoniaux la quote-part de BIC d'un président de SAS ayant opté pour l'IR, lorsque ce BIC est issu du travail personnel du dirigeant et que celui-ci ne dispose d'aucun mécanisme permettant de soumettre ce revenu aux contributions d'activité**.
+
+Le contribuable estime que cette question :
+- est **applicable au litige** (le BIC de M. BAATOUT est soumis à L. 136-6) ;
+- n'a pas **déjà été déclarée conforme** par le Conseil constitutionnel dans les mêmes termes — la décision n° 2012-659 DC ne portait pas sur la configuration spécifique de la SAS à l'IR ;
+- présente un **caractère sérieux**, comme l'administration l'a elle-même reconnu en qualifiant la question de « réelle ».
+
+---
+
+## V. CONCLUSION DU DÉBAT
+
+Le contribuable reconnaît que la position de l'administration est **textuellement fondée** en l'état du droit positif. Le BIC de la SAS Beluga Paris n'a pas été soumis aux contributions des articles L. 136-1 à L. 136-5 et tombe, par défaut, dans le champ de l'article L. 136-6.
+
+Le contribuable maintient que cette position est **constitutionnellement vulnérable**. Elle aboutit à soumettre un revenu du travail personnel à un prélèvement conçu pour le patrimoine passif, sans contrepartie en droits sociaux, en rupture d'égalité avec un travailleur indépendant exerçant la même activité sous une forme juridique différente.
+
+Le débat administratif ayant atteint ses limites, le contribuable se réserve le droit de saisir le tribunal administratif et de soulever une QPC dans les conditions exposées ci-dessus.
+
+---
+
+Pour la société BELUGA PARIS,
+M. Mohamed Amine BAATOUT
+Président
+
+---
+---
+
+# [Avocat] LETTRE FINALE CONSOLIDÉE — Demande de prise de position formelle — 2026-04-05
+
+> **Note :** Ce document constitue la version consolidée de la demande de rescrit, intégrant l'ensemble des arguments ayant survécu au débat contradictoire. Il est destiné à être adressé à la DRFIP en tant que pièce unique et autonome.
+
+---
+
+**BELUGA PARIS**
+SAS au capital de 1 000 €
+910 938 026 RCS de Paris
+229, rue Saint-Honoré — 75001 Paris
+
+**Direction régionale des Finances publiques
+d'Île-de-France et de Paris**
+Pôle Contrôle et Expertise Paris 1er-2e
+16, rue Notre-Dame des Victoires
+75081 PARIS CEDEX 02
+
+Paris, le 5 avril 2026
+
+**Lettre recommandée avec accusé de réception**
+
+---
+
+**Objet :** Demande de prise de position formelle (art. L 80 B 1° du LPF) — Régime des prélèvements sociaux applicables à la quote-part de BIC revenant à M. Mohamed Amine BAATOUT, président et associé à 50 % de la SAS Beluga Paris, ayant opté pour l'IR (art. 239 bis AB du CGI) — Réserve de question prioritaire de constitutionnalité
+
+**Références :**
+- Demande de rescrit du 11 février 2025 (reçue le 6 mai 2025)
+- Réponse DRFIP, réf. RI 2025-692, du 4 août 2025
+- Réponse URSSAF Île-de-France du 30 juin 2025
+
+**Pièces jointes :**
+
+| N° | Document |
+|----|----------|
+| 1 | Notification d'admission à l'ARE — France Travail, 1er octobre 2024 |
+| 2 | Avis de situation SIRENE — micro-entreprise (SIRET 820 352 235 00031) |
+| 3 | Déclaration mensuelle de CA — micro-entreprise, novembre 2025 |
+| 4 | Demande de rescrit du 11 février 2025 (DRFIP) |
+| 5 | Réponse DRFIP, réf. RI 2025-692, du 4 août 2025 |
+| 6 | Réponse URSSAF Île-de-France du 30 juin 2025 |
+| 7 | Extrait Kbis — SAS Beluga Paris |
+| 8 | Mémento fiscal — SAS Beluga Paris |
+
+---
+
+Madame, Monsieur,
+
+La société Beluga Paris, agissant par son représentant légal, M. Mohamed Amine BAATOUT, saisit l'administration fiscale d'une **demande de prise de position formelle** en application de l'article L 80 B 1° du livre des procédures fiscales.
+
+Cette demande, qui complète et corrige celle du 11 février 2025, porte sur le régime des prélèvements sociaux applicables à la quote-part de BIC revenant à M. BAATOUT au titre de l'exercice clos le 30 septembre 2025. Elle vise à contester l'application du taux de 17,2 % retenu par la réponse RI 2025-692 du 4 août 2025.
+
+---
+
+## I. SITUATION DU CONTRIBUABLE
+
+### A. La société
+
+La SAS Beluga Paris (SIREN 910 938 026) est détenue à 50 % par M. BAATOUT (président) et à 50 % par Mme AMMAR (sans mandat social). Elle a opté pour le régime fiscal des sociétés de personnes (art. 239 bis AB du CGI) à compter du 1er octobre 2024 (Pièce 8). Ses bénéfices sont imposés entre les mains des associés dans la catégorie des BIC.
+
+Le président n'a perçu aucune rémunération au titre de son mandat social pour l'exercice clos le 30 septembre 2025. Aucune DSN n'a été établie.
+
+### B. Éléments omis dans la demande du 11 février 2025
+
+La demande initiale, rédigée par le cabinet comptable, **ne mentionnait pas** deux éléments de la situation personnelle de M. BAATOUT :
+
+**1° Bénéficiaire de l'ARE.** M. BAATOUT perçoit l'allocation d'aide au retour à l'emploi depuis le 17 décembre 2024 (Pièce 1). À ce titre, il est affilié au régime général de la sécurité sociale (art. L. 311-5 CSS) et la CSG ainsi que la CRDS sont prélevées à la source sur ses allocations (art. L. 136-1-2 CSS).
+
+**2° Micro-entrepreneur.** M. BAATOUT exploite une micro-entreprise (SIRET 820 352 235 00031, Pièce 2), au titre de laquelle il acquitte des cotisations micro-sociales incluant la CSG et la CRDS (Pièce 3, art. L. 613-7 et L. 136-3 CSS).
+
+### C. Les réponses de l'administration
+
+L'URSSAF (Pièce 6) a indiqué que la quote-part de BIC ne constitue pas une rémunération et n'entre pas dans l'assiette des cotisations qu'elle recouvre.
+
+La DRFIP (Pièce 5) a conclu à l'application de l'article L. 136-6, I, f) du CSS au taux de 17,2 % (CSG 9,2 % + CRDS 0,5 % + prélèvement de solidarité 7,5 %), déclarable en case 5HY de la déclaration 2042 C PRO.
+
+---
+
+## II. L'ABSENCE DE MÉCANISME DE COLLECTE
+
+L'article L. 136-6, I, f) du CSS soumet aux prélèvements sociaux patrimoniaux les BIC/BNC/BA « *à l'exception de ceux qui sont assujettis à la contribution sur les revenus d'activité et de remplacement définie aux articles L. 136-1 à L. 136-5* ».
+
+La quote-part de BIC de la SAS Beluga Paris n'a pas été soumise aux contributions des articles L. 136-1 à L. 136-5. Le contribuable ne conteste pas ce constat factuel.
+
+Cette absence de soumission ne résulte toutefois pas d'un choix du contribuable mais de l'**inexistence de tout mécanisme de collecte** : l'URSSAF se déclare incompétente (Pièce 6), aucune déclaration (DSN, 2042-DRITI) ne permet de soumettre ce BIC à des contributions d'activité, et la clause d'exception ne peut, par construction, être satisfaite pour un président de SAS à l'IR non rémunéré.
+
+Le contribuable reconnaît que la clause d'exception produit un plein effet dans d'autres configurations (EURL, SARL, entreprise individuelle, exploitants agricoles, SAS avec président rémunéré). Mais l'impossibilité de la satisfaire dans la configuration SAS-IR révèle une **lacune systémique** — comme l'atteste l'absence de toute disposition législative, réglementaire ou doctrinale traitant expressément de ce cas.
+
+---
+
+## III. LA QUESTION CONSTITUTIONNELLE — ÉGALITÉ DEVANT LES CHARGES PUBLIQUES
+
+### A. Le cadre
+
+L'article 13 de la Déclaration des droits de l'homme et du citoyen de 1789 dispose que la contribution commune « *doit être également répartie entre tous les citoyens, en raison de leurs facultés* ». Le Conseil constitutionnel juge que toute différence de traitement doit être **fondée sur des critères objectifs et rationnels, en rapport direct avec l'objet de la loi** (CC, 13 décembre 2012, n° 2012-659 DC ; CC, 29 décembre 2009, n° 2009-599 DC).
+
+### B. Le comparateur : même travail, traitement radicalement différent
+
+Deux dirigeants-associés exercent une activité identique de consulting informatique, personnellement et de manière continue, sous le régime de l'IR (art. 239 bis AB CGI), avec un bénéfice BIC comparable.
+
+| | **Gérant d'EURL à l'IR** | **Président de SAS à l'IR** |
+|---|---|---|
+| Régime social | TNS (art. L. 611-1 CSS) | Assimilé salarié — non affilié faute de rémunération |
+| Cotisations sociales sur le BIC | ~45 % (maladie, vieillesse, CSG, CRDS, etc.) | 17,2 % (CSG + CRDS + prélèvement de solidarité) |
+| Droits sociaux acquis | Retraite, maladie, IJ, invalidité-décès, allocations familiales | **Aucun** |
+| Clause d'exception L. 136-6, I, f) | **S'applique** | **Ne peut s'appliquer** |
+
+Le travail est le même. Le revenu est de même nature (BIC professionnel). L'imposition à l'IR est identique. Seule la forme sociale diffère — et c'est cette seule différence qui détermine le régime contributif.
+
+### C. La forme sociale n'est pas un critère en rapport avec l'objet de la loi
+
+L'objet des contributions sociales est le financement de la protection sociale. Le critère pertinent est la **nature économique du revenu** — travail personnel ou rendement du capital.
+
+Le BIC du gérant d'EURL et le BIC du président de SAS sont de même nature économique : ils résultent du même travail, exercé dans les mêmes conditions. La forme sociale (SAS vs EURL) n'est pas un critère objectif et rationnel en rapport direct avec le financement de la protection sociale. C'est un critère **purement formel**.
+
+La décision CC n° 2012-659 DC valide des taux différenciés entre revenus d'activité et revenus du patrimoine — c'est-à-dire entre des **natures économiques** différentes. Elle ne valide pas une différence de traitement entre deux revenus du travail personnel classés différemment selon la seule forme de la société.
+
+### D. Le prélèvement de solidarité de 7,5 % est une contribution à finalité patrimoniale
+
+Le prélèvement de solidarité de 7,5 % (art. 235 ter CGI) frappe les revenus du patrimoine et les produits de placement. Il a été conçu pour des revenus passifs. Son application à des BIC issus du travail personnel — par le seul jeu d'une classification résiduelle sous L. 136-6 — est incompatible avec sa finalité législative. Un revenu ne change pas de nature économique en traversant une SAS plutôt qu'une EURL.
+
+### E. Le choix de la forme sociale est un exercice de la liberté d'entreprendre
+
+Le choix de la SAS est un exercice de la liberté d'entreprendre (art. 4 DDHC, CC, 16 janvier 1982, n° 81-132 DC). L'exercice d'une liberté constitutionnelle ne saurait fonder un traitement contributif défavorable.
+
+L'argument du « choix » est au surplus circulaire : le gérant d'EURL est mieux traité non parce qu'il a fait un meilleur choix, mais parce que le législateur a prévu un mécanisme de collecte des cotisations TNS. L'absence de mécanisme pour la SAS à l'IR est une lacune, non une sanction.
+
+---
+
+## IV. DEMANDE ET RÉSERVE DE QPC
+
+**1°** Le contribuable sollicite la confirmation que la quote-part de BIC de la SAS Beluga Paris n'entre pas dans le champ de l'article L. 136-6, I, f) du CSS, dès lors que la classification patrimoniale de ce BIC — issu du travail personnel d'un contribuable intégré au système de protection sociale — résulte d'une lacune systémique et non d'un choix législatif ;
+
+**2°** À défaut, le contribuable sollicite le fondement juridique permettant de qualifier de « revenu du patrimoine » un BIC issu du travail personnel, au regard du principe d'égalité devant les charges publiques et de la différence de traitement avec un gérant d'EURL dans une situation économiquement identique ;
+
+**3°** Le contribuable informe l'administration qu'il **se réserve expressément la faculté de soulever une question prioritaire de constitutionnalité** (art. 61-1 de la Constitution) portant sur la conformité de l'article L. 136-6, I, f) du CSS au principe d'égalité devant les charges publiques (art. 13 DDHC) et à la liberté d'entreprendre (art. 4 DDHC), en tant qu'il soumet aux prélèvements sociaux patrimoniaux la quote-part de BIC d'un président de SAS à l'IR lorsque ce BIC est issu du travail personnel du dirigeant et que celui-ci ne dispose d'aucun mécanisme permettant de soumettre ce revenu aux contributions d'activité.
+
+---
+
+Dans l'attente de votre réponse, je reste à votre entière disposition.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération distinguée.
+
+Pour la société BELUGA PARIS,
+M. Mohamed Amine BAATOUT
+Président

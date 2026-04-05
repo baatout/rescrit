@@ -51,6 +51,15 @@
 | Art. L. 611-1 CSS | Affiliation au régime des travailleurs non salariés — gérant majoritaire SARL |
 | Art. L. 136-4 CSS | CSG sur les revenus des non-salariés agricoles |
 
+## Textes de loi cités (ajouts Avocat R3 / lettre finale)
+
+| Texte | Objet dans le débat |
+|-------|---------------------|
+| Art. 4 DDHC 1789 | Liberté — fondement de la liberté d'entreprendre |
+| Art. 61-1 Constitution | Question prioritaire de constitutionnalité (QPC) |
+| Art. 23-1 Ord. n° 58-1067 du 7 nov. 1958 | Conditions de recevabilité de la QPC |
+| Art. L. 611-1 CSS | Affiliation au régime TNS — gérant majoritaire de SARL |
+
 ## Jurisprudence citée
 
 | Décision | Objet |
@@ -60,3 +69,6 @@
 | CE, 20 octobre 2021, n° 440375 | SELAS — distinction revenus distribués ≷ 10 % capital — analyse flux par flux |
 | CC, 13 décembre 2012, n° 2012-659 DC | Contributions sociales et principe d'égalité |
 | CE, Sect., 22 juin 2007, *Lesourd*, n° 288206 | Principe d'effet utile dans l'interprétation des textes — cité par Avocat (R2) |
+| CC, 16 janvier 1982, n° 81-132 DC | Liberté d'entreprendre — valeur constitutionnelle — cité par Avocat (R3) |
+| CC, 16 janvier 2001, n° 2000-439 DC | Atteinte disproportionnée à la liberté d'entreprendre — cité par Avocat (R3) |
+| CC, 29 décembre 2009, n° 2009-599 DC | Critères objectifs et rationnels en rapport avec l'objet de la loi — cité par Avocat (R3) |
