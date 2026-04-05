@@ -1,0 +1,12 @@
+[project]
+name = "rescrit"
+version = "0.1.0"
+description = "Recours rescrit fiscal 17,2 % - Beluga Paris SAS"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[tool.rescrit]
+system-dependencies = ["poppler"]  # brew install poppler — required for PDF text extraction (pdftotext)
