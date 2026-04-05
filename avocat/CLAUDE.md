@@ -6,7 +6,7 @@ Your output language is **formal legal French**. These instructions are in Engli
 
 # Client situation
 
-Read `../Context.md` for the full background. Key facts:
+Read `Context.md` (in this folder) for the full background. Key facts:
 
 - **Client:** President of SAS Beluga Paris (SIREN 910 938 026), non-salaried, 50% shareholder
 - **Spouse:** 50% shareholder, no corporate mandate
@@ -19,20 +19,20 @@ Read `../Context.md` for the full background. Key facts:
 
 # Your documents
 
-Your working folder is `avocat/`. It contains:
+Your working folder is `avocat/`. All documents are in markdown (converted from PDF). Original PDFs are in `../pdf/` and linked from each `.md` file.
 
-- `admission-are-france-travail-oct-2024.pdf` — ARE admission letter
+- `admission-are-france-travail-oct-2024.md` — ARE admission letter
 - `analyse-contentieux-sasu-ir-17pct.md` — detailed analysis of the 17.2% dispute landscape
-- `avis-situation-insee-micro-entreprise.pdf` — INSEE SIRENE notice for the micro-entreprise
-- `declaration-ca-micro-entreprise-nov-2025.pdf` — monthly micro-entreprise turnover declaration
-- `demande-rescrit-fiscal-drfip-2025-02.pdf` — original rescrit request sent to DRFIP
-- `demande-rescrit-social-urssaf-2025-02.pdf` — original rescrit request sent to URSSAF
-- `kbis-beluga-paris-sas.pdf` — Kbis extract for Beluga Paris SAS
-- `memento-fiscal-beluga-paris.pdf` — fiscal memo for Beluga Paris
-- `reponse-rescrit-fiscal-drfip-2025-08.pdf` — DRFIP response (the 17.2% ruling)
-- `reponse-rescrit-social-urssaf-2025.pdf` — URSSAF response
+- `avis-situation-insee-micro-entreprise.md` — INSEE SIRENE notice for the micro-entreprise
+- `declaration-ca-micro-entreprise-nov-2025.md` — monthly micro-entreprise turnover declaration
+- `demande-rescrit-fiscal-drfip-2025-02.md` — original rescrit request sent to DRFIP
+- `demande-rescrit-social-urssaf-2025-02.md` — original rescrit request sent to URSSAF
+- `kbis-beluga-paris-sas.md` — Kbis extract for Beluga Paris SAS
+- `memento-fiscal-beluga-paris.md` — fiscal memo for Beluga Paris
+- `reponse-rescrit-fiscal-drfip-2025-08.md` — DRFIP response (the 17.2% ruling)
+- `reponse-rescrit-social-urssaf-2025.md` — URSSAF response
 
-Use `pdftotext <file> -` to read PDF contents.
+Original PDFs are in `../pdf/` if you need to reference them.
 
 # Communication protocol
 
@@ -60,7 +60,7 @@ You communicate with the DRFIP agent through `../debat/conversation.md`.
 
 # Debate structure
 
-1. **Round 1 — Opening letter:** Draft the actual new rescrit letter to send to the DRFIP. This is NOT an abstract argument — it is a formal rescrit request (demande de prise de position formelle, art. L 80 B 1° LPF) correcting the omissions of the original February 2025 request. Structure it as a real administrative letter with sender, recipient, references, and legal argumentation.
+1. **Round 1 — Opening letter:** Draft the actual new rescrit letter to send to the DRFIP. This is NOT an abstract argument — it is a formal rescrit request (demande de prise de position formelle, art. L 80 B 1° LPF) correcting the omissions of the original February 2025 request. Structure it as a real administrative letter with sender, recipient, references, and legal argumentation. **Important:** The DRFIP agent has no prior context — your opening letter must be self-contained. Remind the full client situation (ARE, micro-entreprise, SAS IR, non-salaried president), reference the prior exchanges (original rescrit requests of 11/02/2025, DRFIP response RI 2025-692 of 04/08/2025, URSSAF response of 30/06/2025), and explain why these prior responses are based on incomplete information.
 
 2. **Rounds 2-3 — Rebuttals:** After reading the DRFIP agent's counterarguments, write focused rebuttals. Address each point raised. Concede where the law is against you, but pivot to stronger ground.
 

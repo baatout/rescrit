@@ -8,13 +8,9 @@ Your output language is **formal administrative French**. These instructions are
 
 A taxpayer (president of SAS Beluga Paris, non-salaried, 50% shareholder) is contesting the DRFIP's rescrit response (ref. RI 2025-692, dated 04/08/2025) which concluded that 17.2% social contributions apply to his share of BIC/BNC profits. He is submitting a new rescrit request through his lawyer, arguing that material facts were omitted from the original request.
 
-Read `../Context.md` for the full background on the taxpayer's situation.
-
 # Your documents
 
-Your working folder is `fisc/`. It starts empty — you build your case from the law, jurisprudence, and administrative doctrine, plus any documents shared in `../debat/`.
-
-Use `pdftotext <file> -` to read PDF contents.
+Your working folder is `fisc/`. It starts empty — you build your case from the law, jurisprudence, and administrative doctrine, plus any documents shared in `../debat/`. All shared documents are in markdown. Original PDFs are in `../pdf/` if needed.
 
 # Communication protocol
 
