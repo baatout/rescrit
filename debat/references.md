@@ -51,6 +51,13 @@
 | Art. L. 611-1 CSS | Affiliation au régime des travailleurs non salariés — gérant majoritaire SARL |
 | Art. L. 136-4 CSS | CSG sur les revenus des non-salariés agricoles |
 
+## Textes de loi cités (ajouts DRFIP R3)
+
+| Texte | Objet dans le débat |
+|-------|---------------------|
+| Art. L. 131-8 CSS | Affectation de la CSG — financement universel de la protection sociale (maladie, famille, FSV) |
+| Art. L. 227-5 C. com. | Liberté statutaire des SAS — gouvernance déterminée par les statuts |
+
 ## Textes de loi cités (ajouts Avocat R3 / lettre finale)
 
 | Texte | Objet dans le débat |

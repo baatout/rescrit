@@ -1118,3 +1118,253 @@ Je vous prie d'agréer, Madame, Monsieur, l'expression de ma considération dist
 Pour la société BELUGA PARIS,
 M. Mohamed Amine BAATOUT
 Président
+
+---
+
+# [DRFIP] Réponse finale — L'argument constitutionnel et synthèse du débat — 2026-04-05
+
+Monsieur,
+
+L'administration a pris connaissance de votre réplique finale et de votre lettre consolidée. Elle prend acte de l'abandon de l'argument tiré de l'interprétation personnelle du terme « assujettis » (concession Round 2) et de l'argument tiré de la « lettre morte » (concession Round 3). Le débat se concentre désormais sur un argument unique : **la conformité de l'article L. 136-6, I, f) du CSS au principe d'égalité devant les charges publiques** (art. 13 DDHC) dans son application aux SAS à l'IR.
+
+L'administration répond à chacun des quatre piliers de l'argument constitutionnel, puis formule une synthèse complète du débat incluant son évaluation loyale du risque juridique.
+
+---
+
+## I. SUR LE COMPARATEUR EURL / SAS — LES DEUX DIRIGEANTS NE SONT PAS DANS LA MÊME SITUATION
+
+### A. Le Conseil constitutionnel compare des situations juridiques, non des situations économiques
+
+Le contribuable construit son comparateur sur l'identité de l'activité économique (consulting IT) et conclut que seule « la forme sociale diffère ». Il en déduit une rupture d'égalité.
+
+L'administration oppose que le cadre constitutionnel de l'article 13 DDHC, tel qu'appliqué par le Conseil constitutionnel, ne se limite pas à la substance économique. La jurisprudence constante du Conseil constitutionnel pose le principe suivant :
+
+> Le principe d'égalité ne s'oppose ni à ce que le législateur règle de façon différente des situations différentes, ni à ce qu'il déroge à l'égalité pour des raisons d'intérêt général, pourvu que, dans l'un et l'autre cas, la différence de traitement qui en résulte soit en rapport direct avec l'objet de la loi qui l'établit.
+
+Or, le gérant majoritaire d'une EURL et le président d'une SAS **ne sont pas dans la même situation juridique**. Le législateur les a placés dans deux régimes sociaux fondamentalement distincts :
+
+| | Gérant majoritaire d'EURL | Président de SAS |
+|---|---|---|
+| Statut social | **Travailleur non salarié** (art. L. 611-1 CSS) | **Assimilé salarié** (art. L. 311-3, 23° CSS) |
+| Affiliation | De plein droit, du seul fait de la gérance | Conditionnée à la perception d'une rémunération |
+| Assiette des cotisations | Totalité du revenu professionnel (bénéfice + rémunération) | Rémunération uniquement |
+| Organisme de recouvrement | URSSAF (ex-RSI) — cotisations TNS | URSSAF — cotisations du régime général |
+| Responsabilité | Personnelle et illimitée (dans l'EURL) | Limitée aux apports |
+| Gouvernance | Liberté limitée par le code de commerce | Liberté statutaire maximale (art. L. 227-5 C. com.) |
+
+Cette différence de statut n'est pas un accident. Elle est le résultat d'un **choix législatif délibéré**, opéré par les lois successives qui ont structuré le droit des sociétés et le droit de la sécurité sociale. Le législateur a entendu que le dirigeant de SAS bénéficie du régime des assimilés salariés — avec ses avantages (couverture plus protectrice en cas de rémunération, absence de cotisations minimales, flexibilité) et ses conséquences (pas d'affiliation sans rémunération, pas de soumission automatique du bénéfice aux cotisations).
+
+Le Conseil constitutionnel a toujours admis que des **statuts juridiques différents** fondent des **traitements différents** en matière de contributions sociales. La distinction TNS/salarié est l'une des architectures fondatrices du système français de protection sociale. Sa constitutionnalité n'a jamais été mise en doute.
+
+### B. Le comparateur du contribuable est incomplet — la charge globale est plus favorable au président de SAS
+
+Le tableau présenté par le contribuable (§ II.A de sa réplique finale) appelle une correction décisive. Le contribuable compare la **nature** des prélèvements, mais omet de comparer leur **montant global** :
+
+| | Gérant d'EURL à l'IR | Président de SAS à l'IR (non rémunéré) |
+|---|---|---|
+| **Charge sociale totale sur le BIC** | **~45 %** (cotisations TNS complètes incluant CSG) | **17,2 %** (prélèvements patrimoniaux) |
+| Revenu net conservé après prélèvements sociaux | **~55 %** | **~82,8 %** |
+| Droits sociaux acquis sur le BIC | Oui (retraite, maladie, etc.) | Non |
+
+Le président de SAS **conserve près de 83 % de son BIC** après prélèvements sociaux. Le gérant d'EURL n'en conserve que 55 %. L'écart est de **28 points de pourcentage** en faveur du président de SAS.
+
+Le contribuable présente le taux de 17,2 % comme un « traitement défavorable ». C'est une lecture sélective. Le traitement est défavorable par comparaison avec le taux de CSG d'activité seul (9,2 %) — mais il est **très nettement favorable** par comparaison avec la charge globale du gérant d'EURL (~45 %).
+
+Si la rupture d'égalité devait être sanctionnée par le Conseil constitutionnel, le remède logique ne serait pas nécessairement une réduction du taux applicable au président de SAS, mais pourrait être une **hausse** — par la création d'un mécanisme de cotisations d'activité applicable au BIC de la SAS à l'IR. Le contribuable obtiendrait alors des droits sociaux, mais à un coût nettement supérieur à 17,2 %.
+
+En termes de capacité contributive — critère central de l'article 13 DDHC (« *en raison de leurs facultés* ») —, le président de SAS non rémunéré est aujourd'hui le contribuable le **moins taxé** socialement parmi les dirigeants-associés de sociétés à l'IR. Loin d'être victime d'une inégalité, il bénéficie d'un régime objectivement avantageux.
+
+### C. L'absence de droits sociaux résulte de l'absence de rémunération, non de la forme sociale
+
+Le contribuable souligne qu'il n'acquiert « aucun droit social » en contrepartie du paiement de 17,2 %. Ce constat est exact mais appelle deux précisions :
+
+**1°** La CSG — qu'elle soit prélevée à 9,2 % au titre de l'activité ou à 9,2 % au titre du patrimoine — **ne génère jamais de droits sociaux individuels**. La CSG est une imposition de toute nature affectée au financement universel de la protection sociale (assurance maladie, prestations familiales, fonds de solidarité vieillesse — art. L. 131-8 CSS). Le gérant d'EURL qui paie la CSG à 9,2 % au titre de l'activité n'acquiert pas davantage de droits individuels du fait de ce seul prélèvement que le président de SAS qui paie la CSG à 9,2 % au titre du patrimoine.
+
+Les droits sociaux individuels (retraite, indemnités journalières, prévoyance) sont générés par les **cotisations** (vieillesse, maladie en tant que cotisation, etc.), qui sont distinctes de la CSG. Et ces cotisations sont elles-mêmes liées au **statut social** du dirigeant — TNS pour le gérant d'EURL, assimilé salarié pour le président de SAS.
+
+**2°** Un président de SAS **peut acquérir des droits sociaux complets** au régime des assimilés salariés — il lui suffit de percevoir une rémunération. Le choix de ne percevoir aucune rémunération, qui prive le président de droits sociaux au titre de la SAS, est un choix de gestion, non une contrainte structurelle.
+
+En l'espèce, le contribuable fait observer que M. BAATOUT dispose par ailleurs de droits sociaux via l'ARE (couverture maladie, trimestres de retraite) et via la micro-entreprise (cotisations TNS). L'absence de droits sociaux au titre spécifique de la SAS est donc compensée par d'autres canaux — canaux dont l'existence a été révélée par le contribuable lui-même.
+
+---
+
+## II. SUR LA RELECTURE DE LA DÉCISION CC N° 2012-659 DC
+
+Le contribuable invite l'administration à « relire cette décision dans son intégralité ». L'administration a procédé à cet exercice et formule les observations suivantes.
+
+### A. La décision valide le cadre législatif qui produit le résultat contesté
+
+La décision CC n° 2012-659 DC du 13 décembre 2012 a expressément validé la constitutionnalité du dispositif de contributions sociales différenciées selon la catégorie de revenus — revenus d'activité, revenus de remplacement, revenus du patrimoine, produits de placement. Le Conseil constitutionnel a jugé que cette **architecture catégorielle** est conforme au principe d'égalité dès lors que les différences de taux reposent sur des critères objectifs et rationnels.
+
+Or, l'article L. 136-6, I, f) fait partie intégrante de cette architecture. Son mécanisme — soumettre aux prélèvements patrimoniaux les BIC/BNC/BA non soumis aux contributions d'activité — est exactement le dispositif que le CC a validé.
+
+### B. La décision ne tranche pas la question précise de la SAS à l'IR — mais elle valide le principe
+
+Le contribuable a raison de relever que la décision n° 2012-659 DC ne portait pas spécifiquement sur la configuration de la SAS à l'IR. L'administration en convient.
+
+Toutefois, le contribuable tire de cette absence une conclusion incorrecte. Il soutient que la décision ne valide que des différences entre « natures économiques » (activité vs. patrimoine) et non entre « formes juridiques ».
+
+L'administration oppose que le CC n'a pas eu besoin de distinguer entre ces deux types de critères, parce que le dispositif validé — l'architecture catégorielle de la CSG — **repose précisément sur le statut juridique du contribuable et de son revenu** pour déterminer la catégorie applicable. C'est le statut juridique (salarié → L. 136-1-1, TNS → L. 136-3, etc.) qui détermine si un revenu est soumis aux contributions d'activité et, par voie de conséquence, s'il échappe à L. 136-6. Le CC a validé ce mécanisme dans son ensemble.
+
+### C. Le critère de la forme sociale est en rapport avec l'objet de la loi
+
+Le contribuable soutient que la forme sociale (EURL vs. SAS) n'est pas un « critère objectif et rationnel en rapport direct avec l'objet de la loi » de financement de la sécurité sociale.
+
+L'administration oppose que la forme sociale n'est pas le critère — elle est le **vecteur** par lequel le critère opère. Le critère est le **statut social du dirigeant** (TNS ou assimilé salarié), lequel est déterminé par la loi en fonction de la forme sociale. La chaîne causale est :
+
+> Forme sociale → Statut social du dirigeant → Régime de cotisations applicable → Catégorie de prélèvement social sur le BIC
+
+Cette chaîne est entièrement législative. Chaque maillon résulte d'une disposition légale :
+- Art. L. 611-1 CSS (EURL → TNS)
+- Art. L. 311-3, 23° CSS (SAS → assimilé salarié)
+- Art. L. 136-3 CSS (TNS → CSG d'activité sur le BIC)
+- Art. L. 136-6, I, f) CSS (BIC non soumis → CSG patrimoniale)
+
+Le statut social du dirigeant est un critère objectif et rationnel en rapport direct avec l'objet de la loi de financement de la sécurité sociale, puisqu'il détermine les droits et obligations du dirigeant au sein du système de protection sociale.
+
+---
+
+## III. SUR LE PRÉLÈVEMENT DE SOLIDARITÉ DE 7,5 %
+
+Le contribuable soutient que le prélèvement de solidarité (art. 235 ter CGI) a été « conçu pour des revenus passifs » et que son application à des BIC professionnels est contraire à l'intention du législateur.
+
+### A. Le champ du prélèvement est défini par renvoi légal, non par son intention
+
+Le champ d'application du prélèvement de solidarité est défini par l'article 235 ter du CGI, qui le rend applicable aux revenus « mentionnés à l'article L. 136-6 du code de la sécurité sociale ». Le texte ne distingue pas entre les BIC « passifs » et les BIC « professionnels » au sein de l'article L. 136-6. Il s'applique à **tout revenu entrant dans le champ de L. 136-6**, quelle que soit sa nature économique sous-jacente.
+
+L'intention du législateur, telle qu'elle pourrait se dégager des travaux préparatoires, ne peut prévaloir contre le texte clair de la loi.
+
+### B. L'argument renforce la thèse de l'administration sur la charge globale
+
+L'administration observe cependant que le prélèvement de solidarité de 7,5 % représente l'écart marginal entre le taux patrimonial (17,2 %) et le taux « CSG + CRDS seuls » (9,7 %). C'est ce seul écart de 7,5 points qui sépare le traitement du président de SAS d'un hypothétique régime de « CSG d'activité seule ».
+
+Or, si le contribuable obtenait la suppression de ce prélèvement de solidarité, il paierait **9,7 %** de prélèvements sociaux sur son BIC — contre **~45 %** pour le gérant d'EURL. L'écart en faveur du président de SAS passerait de 28 points à 35 points. La « rupture d'égalité » dénoncée par le contribuable se trouverait **aggravée**, non réduite.
+
+Ce paradoxe illustre la difficulté de l'argument constitutionnel du contribuable : il dénonce une inégalité dont la correction dans le sens qu'il souhaite (baisse du taux) élargirait l'écart avec le gérant d'EURL, tandis que la correction dans l'autre sens (hausse via des cotisations d'activité) lui serait financièrement défavorable.
+
+---
+
+## IV. SUR LA LIBERTÉ D'ENTREPRENDRE ET L'ARGUMENT DU « CHOIX CIRCULAIRE »
+
+### A. La liberté d'entreprendre n'impose pas l'identité de traitement entre formes sociales
+
+Le contribuable invoque la liberté d'entreprendre (art. 4 DDHC, CC, 16 janvier 1982, n° 81-132 DC) pour soutenir que le choix de la forme SAS ne peut fonder un traitement contributif défavorable.
+
+L'administration relève que la liberté d'entreprendre, telle que consacrée par le Conseil constitutionnel, comporte la liberté de **choisir** une forme juridique, mais n'impose pas que **toutes les formes juridiques produisent des effets sociaux et fiscaux identiques**. Au contraire : tout le droit des sociétés et tout le droit de la sécurité sociale reposent sur la prémisse que les formes juridiques emportent des conséquences différentes. C'est précisément l'objet du choix que de sélectionner, parmi ces régimes, celui qui correspond le mieux à la situation du créateur d'entreprise.
+
+Le Conseil constitutionnel a constamment jugé que le législateur peut attacher des conséquences différentes — y compris en matière de charges sociales — à des statuts juridiques différents, sans porter atteinte à la liberté d'entreprendre, dès lors que ces différences ne rendent pas l'exercice de cette liberté impossible ou excessivement difficile (CC, 16 janvier 2001, n° 2000-439 DC, cité par le demandeur).
+
+Or, le taux de 17,2 % ne rend pas l'exercice de l'activité sous forme de SAS « impossible ou excessivement difficile ». Il représente une charge significativement **inférieure** à celle que supporterait le même contribuable sous forme d'EURL.
+
+### B. L'argument du « choix circulaire » est réversible
+
+Le contribuable soutient que l'argument du « choix » est circulaire : le gérant d'EURL n'est pas mieux traité parce qu'il a fait un « bon choix », mais parce que le législateur a prévu un mécanisme de collecte TNS.
+
+L'administration observe que cet argument est **réversible**. Le président de SAS n'est pas « moins bien traité » que le gérant d'EURL — il est traité **différemment**, et globalement de manière **plus favorable** (17,2 % vs. ~45 %).
+
+Si l'on suit la logique du contribuable, il faudrait admettre que le gérant d'EURL est « victime » de la prévision législative d'un mécanisme de cotisations TNS, puisque ce mécanisme l'expose à une charge de ~45 % — soit trois fois celle du président de SAS. Le « bon choix » serait alors... de choisir la SAS et de ne pas se rémunérer.
+
+La circularité dénoncée par le contribuable n'est pas un vice logique : elle est l'expression du fait que **chaque forme sociale emporte un régime social propre**, avec ses avantages et ses inconvénients. Le gérant d'EURL paie davantage mais acquiert des droits. Le président de SAS paie moins mais n'acquiert pas de droits (au titre de la SAS). Il ne s'agit pas d'une rupture d'égalité mais d'un **arbitrage** entre charge contributive et acquisition de droits — arbitrage dont le contribuable avait la maîtrise au moment du choix de la forme sociale.
+
+---
+
+## V. SUR L'IMPOSSIBILITÉ STRUCTURELLE COMME « CONTEXTE » DE L'ARGUMENT CONSTITUTIONNEL
+
+Le contribuable repositionne l'impossibilité structurelle non comme un argument autonome, mais comme un « contexte » renforçant le caractère sérieux de la question constitutionnelle.
+
+L'administration prend acte de cette reformulation et maintient ses observations antérieures (contre-réplique, § II) : l'absence de mécanisme de collecte traduit une absence de dette légale résultant des choix juridiques du contribuable.
+
+L'administration concède que ce contexte pourrait être retenu par le tribunal administratif dans l'appréciation du « caractère sérieux » de la QPC. Cette concession ne modifie toutefois pas l'analyse de fond.
+
+---
+
+## VI. SUR LA RÉSERVE DE QPC
+
+L'administration prend acte de la réserve de question prioritaire de constitutionnalité formulée par le contribuable. Elle n'a pas compétence pour apprécier la recevabilité ou le bien-fondé d'une QPC, cette appréciation relevant du juge administratif puis, le cas échéant, du Conseil d'État et du Conseil constitutionnel.
+
+L'administration formule néanmoins les observations suivantes à l'attention du contribuable et de ses conseils :
+
+**1° Sur la condition d'applicabilité au litige :** Satisfaite. L'article L. 136-6, I, f) du CSS est directement applicable à la quote-part de BIC de M. BAATOUT.
+
+**2° Sur la condition de nouveauté :** Vraisemblablement satisfaite. La décision CC n° 2012-659 DC a validé le cadre général de la CSG, mais n'a pas spécifiquement examiné la configuration SAS-IR-président non rémunéré.
+
+**3° Sur la condition de caractère sérieux :** L'administration observe que le contribuable fait valoir des arguments méritant examen, mais que leur force est significativement tempérée par les contre-arguments développés dans la présente réponse — notamment la comparaison des charges globales (17,2 % vs. ~45 %), la différence de situation juridique entre TNS et assimilé salarié, et la validation du cadre catégoriel par la décision n° 2012-659 DC.
+
+---
+
+## VII. SYNTHÈSE DU DÉBAT — POSITION FINALE DE L'ADMINISTRATION
+
+### A. Bilan des concessions réciproques
+
+Le débat contradictoire a permis de resserrer progressivement les points de désaccord :
+
+| Argument du contribuable | Sort |
+|--------------------------|------|
+| Interprétation personnelle de « assujettis » (R1, § III.A.2°) | **Abandonné** par le contribuable (R2) |
+| ARE crée une affiliation universelle (R1, § III.B) | **Réfuté** — l'affiliation ARE ne porte pas sur le BIC de la SAS |
+| Micro-entreprise exclut le BIC de L. 136-6 (R1, § III.C) | **Réfuté** — revenus distincts, SIRET distincts |
+| Clause d'exception = lettre morte / effet utile (R2, § II.B) | **Abandonné** par le contribuable (R3) |
+| Impossibilité structurelle comme argument autonome (R2, § II) | **Abandonné** comme argument autonome ; maintenu comme contexte |
+| Qualification URSSAF viciée par faits incomplets (R2, § III) | **Partiellement concédé** par l'administration (prémisse factuelle incomplète), mais qualification juridique maintenue |
+| Égalité devant les charges publiques — art. 13 DDHC (R3, § II) | **Contesté** par l'administration — argument maintenu par le contribuable |
+| QPC sur L. 136-6, I, f) CSS (R3, § IV) | **Réserve prise par le contribuable** — non évaluable au stade administratif |
+
+| Concession de l'administration | Portée |
+|-------------------------------|--------|
+| Prémisse factuelle de l'URSSAF incomplète (R2, § IV) | N'affecte pas la qualification juridique |
+| Question juridique « réelle » (R2, § VII) | Reconnaissance de l'absence de jurisprudence CE spécifique à la SAS-IR |
+| Absence de BOI spécifique (R2, § VII) | Reconnaissance de la lacune doctrinale |
+| Impossibilité structurelle comme contexte de QPC (présente réponse, § V) | La circonstance pourrait contribuer au « caractère sérieux » |
+
+### B. Ce qui est acquis — la position textuelle de l'administration est solide
+
+Le contribuable reconnaît lui-même (§ V de sa réplique finale) que la position de l'administration est « **textuellement fondée** en l'état du droit positif ». La quote-part de BIC de la SAS Beluga Paris :
+
+- n'a pas été assujettie aux contributions des articles L. 136-1 à L. 136-5 ;
+- tombe dans le champ de l'article L. 136-6, I, f) par défaut ;
+- est soumise aux prélèvements sociaux au taux global de 17,2 %.
+
+Ce constat n'est plus contesté.
+
+### C. Le risque juridique réel — évaluation loyale
+
+L'administration, dans un souci de transparence, évalue comme suit le risque juridique que présente l'argument constitutionnel résiduel :
+
+**1° La QPC a une chance non négligeable d'être transmise au Conseil constitutionnel.** Les conditions d'applicabilité et de nouveauté paraissent réunies. Le caractère sérieux est discutable mais défendable, compte tenu de la lacune doctrinale reconnue et de l'absence de précédent spécifique.
+
+**2° Devant le Conseil constitutionnel, les chances de succès sont limitées**, pour les raisons suivantes :
+
+- **(a)** Le Conseil constitutionnel a constamment admis que des **statuts juridiques différents** (TNS vs. assimilé salarié) fondent des **traitements contributifs différents**. La distinction TNS/salarié est un pilier du système de protection sociale dont la constitutionnalité n'a jamais été remise en cause.
+
+- **(b)** La **charge globale** du président de SAS non rémunéré (17,2 %) est **nettement inférieure** à celle du gérant d'EURL (~45 %). Le contribuable ne subit pas une charge excessive au regard de ses facultés contributives — il bénéficie au contraire d'un régime objectivement favorable. L'argument de rupture d'égalité se heurte à cette réalité arithmétique.
+
+- **(c)** La décision **CC n° 2012-659 DC** a validé l'architecture catégorielle (activité / remplacement / patrimoine / placement) qui produit le résultat contesté.
+
+- **(d)** Le contribuable **disposait d'alternatives** pour organiser différemment sa situation (SARL, rémunération, non-option IR). L'impossibilité n'est pas absolue mais résulte d'une combinaison de choix librement exercés.
+
+**3° Le point de vulnérabilité principal de l'administration est le prélèvement de solidarité de 7,5 %.** C'est le seul élément dont l'application à un BIC professionnel pourrait être considérée comme disproportionnée, dans la mesure où ce prélèvement a été conçu pour des revenus passifs et ne finance pas directement la protection sociale contributive. Le Conseil constitutionnel pourrait, théoriquement, prononcer une **réserve d'interprétation** ou une **déclaration d'inconstitutionnalité partielle** limitée au prélèvement de solidarité, sans remettre en cause la CSG et la CRDS patrimoniales (9,7 %).
+
+Toutefois, ce scénario reste improbable en l'état de la jurisprudence constitutionnelle, qui n'a jamais distingué entre les composantes du prélèvement patrimonial global.
+
+**4° Le risque le plus probable, si la QPC aboutit, est une déclaration de conformité assortie d'une invitation au législateur** à clarifier le régime applicable aux SAS à l'IR — résultat qui ne modifierait pas le droit applicable rétroactivement mais pourrait conduire à une intervention législative future.
+
+### D. Position finale
+
+**L'administration maintient intégralement sa position.** La quote-part de BIC de la SAS Beluga Paris revenant à M. Mohamed Amine BAATOUT relève des prélèvements sociaux au taux global de **17,2 %** en application de l'article L. 136-6, I, f) du CSS, à déclarer en **case 5HY** de la déclaration complémentaire n° 2042 C PRO.
+
+En réponse aux trois questions de la lettre consolidée :
+
+**1°** L'administration ne confirme pas que la quote-part de BIC échappe au champ de l'article L. 136-6. Elle y entre pleinement.
+
+**2°** Le fondement juridique de la qualification patrimoniale est l'article L. 136-6, I, f) du CSS, lu à la lumière des articles L. 311-3, 23° CSS (statut assimilé salarié conditionné à la rémunération) et de la jurisprudence constante du Conseil d'État (CE, 3 février 2021, n° 429882 ; CE, 2 avril 2021, n° 428084 ; CE, 20 octobre 2021, n° 440375). La différence de traitement avec le gérant d'EURL résulte de la différence de statut social (TNS vs. assimilé salarié), qui est un critère objectif et rationnel en rapport avec l'objet de la loi de financement de la sécurité sociale.
+
+**3°** L'administration prend acte de la réserve de QPC sans pouvoir se prononcer sur son bien-fondé. Elle observe que les conditions de sérieux sont contestables au vu des éléments développés dans le présent échange.
+
+Les voies de recours indiquées dans la réponse initiale demeurent ouvertes.
+
+Je vous prie d'agréer, Monsieur, l'assurance de ma considération distinguée.
+
+Pour la Directrice régionale des Finances publiques,
+L'inspectrice divisionnaire des Finances publiques,
+
+Annick LOUBIÈRE
