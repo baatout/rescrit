@@ -81,17 +81,15 @@ Son capital social de 1 000 euros est réparti comme suit :
 
 La société a opté pour le régime fiscal des sociétés de personnes en application de l'**article 239 bis AB du CGI**, avec effet au **1er octobre 2024** (**Pièce 8** : mémento fiscal). En conséquence, l'intégralité des bénéfices sociaux est imposée entre les mains des associés à l'impôt sur le revenu dans la catégorie des BIC.
 
-Pour l'exercice en cours (1er octobre 2024 — 30 septembre 2025), l'activité dominante est, pour la première fois, la **programmation et le consulting informatique**, exercés personnellement et de manière continue par M. BAATOUT. Les résultats prévisionnels s'établissent à : chiffre d'affaires de 123 000 €, charges d'exploitation de 11 000 € (hors rémunération du dirigeant), bénéfice estimé de 112 000 €.
-
 Le président n'a perçu **aucune rémunération** au titre de son mandat social pour cet exercice. Aucune déclaration sociale nominative (DSN) n'a été établie à ce titre par la société.
 
 ### B. La situation personnelle de M. BAATOUT
 
 #### 1. Bénéficiaire de l'allocation d'aide au retour à l'emploi (ARE)
 
-M. BAATOUT est inscrit comme demandeur d'emploi auprès de France Travail (identifiant : 1849585U) et perçoit l'**ARE depuis le 17 décembre 2024**, pour une durée maximale de 548 jours (**Pièce 1** : notification d'admission France Travail du 1er octobre 2024).
+M. BAATOUT est inscrit comme demandeur d'emploi auprès de France Travail (identifiant : 1849585U) et perçoit l'**ARE depuis le 17 décembre 2024** (**Pièce 1** : notification d'admission France Travail du 1er octobre 2024).
 
-Le montant journalier initial de l'allocation s'établit à 116,94 € net, après déduction des cotisations sociales obligatoires, dont notamment :
+Le montant net de l'allocation est versé après déduction des cotisations sociales obligatoires, dont notamment :
 
 - la **contribution sociale généralisée (CSG)** prélevée à la source par France Travail, en application de l'**article L. 136-1-2 du code de la sécurité sociale** (CSG sur les revenus de remplacement) ;
 - la **contribution pour le remboursement de la dette sociale (CRDS)** à 0,5 %, également prélevée à la source.
@@ -104,7 +102,7 @@ En sa qualité de bénéficiaire de l'ARE, M. BAATOUT est **affilié au régime 
 
 #### 2. Exploitant d'une micro-entreprise (BIC)
 
-M. BAATOUT exploite parallèlement une activité commerciale sous le régime de la micro-entreprise, immatriculée sous le **SIRET 820 352 235 00031** (**Pièce 2** : avis de situation INSEE). Cette activité, distincte de celle de la SAS Beluga Paris, consiste en la vente de produits digitaux (marchandises) et relève de la catégorie des BIC.
+M. BAATOUT exploite parallèlement une activité commerciale sous le régime de la micro-entreprise, immatriculée sous le **SIRET 820 352 235 00031** (**Pièce 2** : avis de situation INSEE). Cette activité consiste en la vente de produits digitaux (marchandises) et relève de la catégorie des BIC.
 
 Au titre de cette activité, M. BAATOUT est soumis au **régime micro-social simplifié** et s'acquitte mensuellement de cotisations et contributions sociales calculées sur son chiffre d'affaires, au taux global de **12,3 %** pour la vente de marchandises. Ces cotisations incluent :
 
@@ -113,7 +111,7 @@ Au titre de cette activité, M. BAATOUT est soumis au **régime micro-social sim
 - la **CSG et la CRDS** ;
 - la contribution formation professionnelle.
 
-La déclaration mensuelle de novembre 2025 fait apparaître un chiffre d'affaires de 3 702 € et des cotisations micro-sociales de 455 € (**Pièce 3**). M. BAATOUT a également opté pour le versement libératoire de l'impôt sur le revenu au titre de cette micro-entreprise.
+La déclaration mensuelle de novembre 2025 atteste du paiement effectif de cotisations micro-sociales (**Pièce 3**).
 
 Le régime micro-social constitue une modalité simplifiée de recouvrement des cotisations et contributions prévues notamment aux **articles L. 131-6 et L. 136-3 du code de la sécurité sociale** (CSG sur les revenus des travailleurs non salariés non agricoles).
 
@@ -194,8 +192,7 @@ L'article L. 136-6 est un mécanisme de « filet de rattrapage » destiné à so
 Appliquer le taux de 17,2 % — qui comprend le prélèvement de solidarité de 7,5 % (art. 235 ter du CGI), applicable aux seuls revenus du patrimoine et de placement — à des bénéfices issus du travail personnel d'un contribuable **déjà affilié au régime général et déjà redevable de la CSG**, aboutirait à :
 
 - traiter un revenu professionnel comme un revenu patrimonial ;
-- imposer une contribution de solidarité sans contrepartie sociale (pas de droits à retraite, pas de couverture complémentaire) ;
-- créer une situation inégalitaire entre M. BAATOUT et un travailleur dans une situation comparable mais structuré différemment (EURL, entreprise individuelle).
+- imposer le prélèvement de solidarité de 7,5 %, lequel ne finance aucune prestation sociale et ne s'applique qu'aux revenus du patrimoine et de placement, sur des revenus issus du travail personnel d'un contribuable déjà redevable de la CSG.
 
 ### B. L'affiliation au régime général via l'ARE : une situation distincte de la jurisprudence invoquée
 

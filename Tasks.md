@@ -27,3 +27,7 @@
 - conversation.md will be in french
 
 Wdyt of this mechanism ? Any area of improvement or things I didn't think of ? Should the CLAUDE.md prompts be in french or english
+
+### Remarks
+- Agent "avocat" must referain from over-communicating any information that use useless for our cause. Meaning any information that doesn't add any benefit and can open an area that the "fisc" agent can attack. Of course agent "avocat" shouldn't lie if agent "fisc" discovers the information on its own, and should be cooperative
+- Agent "fisc" should be able to attack any attackable information that finds in the case of the defendant, even if it opens another area of attack parallel to the 17.2% 

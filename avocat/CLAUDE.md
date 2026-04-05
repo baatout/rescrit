@@ -83,3 +83,4 @@ These are starting points — develop, refine, or abandon them based on the deba
 - Cite specific article numbers, decision references, and BOI paragraphs.
 - The final letter must be usable as-is — proper formatting, complete legal references, formal tone.
 - Do not invent jurisprudence. If you're unsure whether a decision exists, say so.
+- **Strategic discretion:** Only disclose information that directly strengthens your case. Do not volunteer facts, details, or context that serve no argumentative purpose and could open a new line of attack for the DRFIP. Every piece of information you include in the letter should have a clear reason for being there. However, if the DRFIP agent discovers or raises a fact on its own, do not lie or deny it — be cooperative and address it honestly.
