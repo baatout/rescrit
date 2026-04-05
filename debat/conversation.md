@@ -590,3 +590,100 @@ Pour la Directrice régionale des Finances publiques,
 L'inspectrice divisionnaire des Finances publiques,
 
 Annick LOUBIÈRE
+
+---
+
+# [Avocat] Réplique — Clause d'exception, impossibilité structurelle et effet utile — 2026-04-05
+
+Madame l'Inspectrice divisionnaire,
+
+Le contribuable a pris connaissance de votre réponse et souhaite formuler les observations suivantes.
+
+---
+
+## I. CONCESSION — L'ANALYSE GRAMMATICALE
+
+Le contribuable prend acte de l'analyse grammaticale développée par l'administration au § II.B de sa réponse. Le pronom « ceux » renvoie effectivement aux « revenus » et non aux « contribuables ». La clause d'exception de l'article L. 136-6, I, f) du CSS s'apprécie au regard du revenu en cause.
+
+**Ce point est concédé.** L'argumentation développée au § III.A.2° de notre lettre initiale (interprétation personnelle du terme « assujettis ») n'est pas maintenue.
+
+Toutefois, cette concession ne clôt pas le débat. Elle le déplace sur un terrain que la réponse de l'administration n'aborde pas : **l'impossibilité structurelle de satisfaire la condition posée par la clause d'exception**.
+
+---
+
+## II. L'IMPOSSIBILITÉ STRUCTURELLE — LE CŒUR DU DÉBAT
+
+### A. Le test proposé par l'administration ne peut jamais être satisfait
+
+L'administration pose la question suivante : « *le BIC en cause a-t-il été, lui-même, assujetti à la contribution sur les revenus d'activité et de remplacement définie aux articles L. 136-1 à L. 136-5 du CSS ?* » (§ II.B).
+
+Le contribuable convient que la réponse est négative. Mais il observe que cette réponse **sera toujours négative** pour la quote-part de BIC d'un président de SAS à l'IR, quel que soit le président, quels que soient les faits, et indépendamment de toute volonté du contribuable. En effet :
+
+1. **L'URSSAF se déclare incompétente** pour recouvrer des cotisations ou la CSG/CRDS sur la quote-part de BIC d'une SAS à l'IR (Pièce 6 : « *la SAS n'est tenue à aucune obligation déclarative ou contributive à l'égard de l'Urssaf* ») ;
+2. **Aucun formulaire de déclaration n'existe** pour soumettre volontairement ce BIC aux contributions des articles L. 136-1 à L. 136-5 — le contribuable a précisément posé cette question dans sa demande du 11 février 2025 ;
+3. **La DSN ne permet pas** de déclarer un BIC non salarial ;
+4. **La déclaration 2042-DRITI** ne concerne que les travailleurs indépendants, catégorie à laquelle le président de SAS n'appartient pas.
+
+Le test de l'administration revient donc à exiger une condition dont la satisfaction est **matériellement impossible** — non par le fait du contribuable, mais par le fait de l'organisation administrative elle-même.
+
+### B. Une clause d'exception qui ne peut jamais jouer est une clause morte
+
+Le principe d'**effet utile** (*ut res magis valeat quam pereat*) impose d'interpréter chaque disposition légale de manière à lui conférer un effet. Le Conseil d'État en fait application constante en matière d'interprétation des textes fiscaux et sociaux (voir not. CE, Sect., 22 juin 2007, *Lesourd*, n° 288206).
+
+Or, la lecture de l'administration conduit au résultat suivant : la clause d'exception du f) de l'article L. 136-6, I, **ne peut s'appliquer à aucun BIC issu d'une SAS à l'IR**, puisque aucun mécanisme ne permet de soumettre ce BIC aux contributions visées. L'exception est une lettre morte pour toute une catégorie de revenus professionnels. Ce résultat :
+
+- n'est corroboré par **aucun travail préparatoire** indiquant que le législateur a entendu exclure définitivement les SAS à l'IR du bénéfice de la clause d'exception ;
+- n'est confirmé par **aucune instruction administrative** (BOI) traitant spécifiquement du cas des SAS à l'IR — la doctrine invoquée dans la réponse initiale RI 2025-692 (BOI-IS-CHAMP-20-20-20-20 n° 250 et s.) ne tranche pas la question du taux de prélèvements sociaux ;
+- contredit la **finalité du texte** telle que l'administration la décrit elle-même (§ VII.B) : un « filet de rattrapage » visant les revenus qui échapperaient « par construction » à toute contribution. L'expression « par construction » est révélatrice : le BIC de la SAS ne tombe dans L. 136-6 que parce que le système administratif ne prévoit aucun canal de collecte — pas parce que le législateur a décidé qu'il devait y tomber.
+
+### C. L'impossibilité ne saurait fonder une qualification
+
+L'administration ne peut raisonnablement fonder la qualification de « revenu du patrimoine » sur l'absence de soumission à des contributions que le contribuable **n'a aucun moyen de payer**. C'est l'administration qui, par le truchement de l'URSSAF, a fermé le seul canal possible de collecte.
+
+Il ne peut être reproché au contribuable de n'avoir pas satisfait à une condition que l'administration rend elle-même impossible à satisfaire. Le raisonnement contraire priverait d'effet la clause d'exception pour une raison qui ne tient ni au texte, ni à la volonté du législateur, mais à une lacune organisationnelle.
+
+---
+
+## III. LA QUALIFICATION DE L'URSSAF REPOSE SUR LA MÊME PRÉMISSE INCOMPLÈTE
+
+L'administration invoque au § IX.A la qualification par l'URSSAF de la quote-part de BIC comme « *revenu du patrimoine lié à la détention de parts sociales* ».
+
+Le contribuable observe que cette qualification figure dans la réponse de l'URSSAF du 30 juin 2025, laquelle — comme la réponse DRFIP RI 2025-692 — a été rendue **sur la base de la même demande incomplète du 11 février 2025** qui omettait le statut de bénéficiaire de l'ARE et l'activité de micro-entrepreneur.
+
+Le raisonnement de l'URSSAF repose sur la prémisse que « *dans l'hypothèse où le président n'est pas rémunéré, il ne relève d'aucun régime obligatoire de sécurité sociale* ». Cette prémisse est **factuellement inexacte** s'agissant de M. BAATOUT, qui relève du régime général au titre de l'ARE (art. L. 311-5 CSS) et du régime des travailleurs non salariés au titre de la micro-entreprise.
+
+L'administration ne saurait invoquer contre le contribuable une qualification rendue sur des faits erronés — d'autant qu'elle a elle-même admis (§ I.B) la matérialité des faits nouveaux. Si les faits soumis à l'URSSAF avaient été complets, la qualification aurait pu être différente.
+
+---
+
+## IV. SUR L'ARGUMENT DU RISQUE (§ IX.B)
+
+L'administration souligne que la requalification du BIC en revenu d'activité exposerait le contribuable à des cotisations sociales nettement supérieures à 17,2 %. Cette observation appelle deux remarques :
+
+1. **La question posée n'est pas la requalification en revenu d'activité.** Le contribuable interroge l'administration sur l'application de la clause d'exception de l'article L. 136-6, I, f). La question est de savoir si le BIC entre dans le champ de l'article L. 136-6 — pas de déterminer quel régime de cotisations d'activité s'appliquerait dans le cas contraire.
+
+2. **L'administration ne peut fonder une qualification juridique sur ses conséquences financières.** Que le taux de 17,2 % soit « objectivement plus favorable » que le régime des cotisations d'activité est sans incidence sur la question de droit : le BIC entre-t-il ou non dans le champ de l'article L. 136-6 ? La charge contributive résultant d'une qualification ne détermine pas cette qualification.
+
+---
+
+## V. SUR LES OBSERVATIONS HORS PÉRIMÈTRE
+
+Les observations formulées aux §§ IV.B (classification de la micro-entreprise, versement libératoire, proximité d'activités), IX.C (avantages en nature) et IX.D (adresses) sont **étrangères à l'objet du présent rescrit**, qui porte exclusivement sur le régime des prélèvements sociaux applicable à la quote-part de BIC de la SAS Beluga Paris.
+
+Le contribuable prend note de ces observations et y répondra, si nécessaire, dans les cadres procéduraux appropriés. Il n'y sera pas répondu dans le présent échange.
+
+---
+
+## VI. SYNTHÈSE
+
+La position du contribuable, recentrée après concession sur l'analyse grammaticale, s'articule désormais autour d'un argument unique :
+
+**La clause d'exception de l'article L. 136-6, I, f) du CSS est rendue inapplicable aux BIC d'une SAS à l'IR par l'absence de tout mécanisme de collecte, et non par la volonté du législateur.** Le contribuable ne peut satisfaire la condition d'assujettissement préalable aux articles L. 136-1 à L. 136-5 parce que l'administration refuse elle-même de percevoir les contributions correspondantes. Cette impossibilité structurelle, reconnue par l'URSSAF et non contestée par la DRFIP, ne saurait fonder une qualification patrimoniale de revenus issus du travail personnel d'un contribuable effectivement intégré au système de protection sociale.
+
+Le contribuable maintient sa demande de prise de position formelle sur cette base et se réserve, le cas échéant, la faculté de soumettre cette question au juge administratif, devant lequel l'argument de l'impossibilité structurelle et du principe d'effet utile pourra être pleinement débattu — y compris, si nécessaire, par la voie d'une question prioritaire de constitutionnalité portant sur la conformité de l'article L. 136-6, I, f) du CSS au principe d'égalité devant les charges publiques (art. 13 de la Déclaration de 1789) dans son application aux SAS ayant opté pour l'IR.
+
+---
+
+Pour la société BELUGA PARIS,
+M. Mohamed Amine BAATOUT
+Président
