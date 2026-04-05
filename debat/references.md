@@ -44,6 +44,13 @@
 | Art. 60 CGI | Détermination du bénéfice de l'exploitant individuel (applicable via 239 bis AB) |
 | Ordonnance n° 96-50 du 24 janvier 1996, art. 15 | CRDS — assiette et taux (0,5 %) |
 
+## Textes de loi cités (ajouts DRFIP R2)
+
+| Texte | Objet dans le débat |
+|-------|---------------------|
+| Art. L. 611-1 CSS | Affiliation au régime des travailleurs non salariés — gérant majoritaire SARL |
+| Art. L. 136-4 CSS | CSG sur les revenus des non-salariés agricoles |
+
 ## Jurisprudence citée
 
 | Décision | Objet |
@@ -52,3 +59,4 @@
 | CE, 2 avril 2021, n° 428084 | BA sans cotisation sociale → CSG patrimoniale |
 | CE, 20 octobre 2021, n° 440375 | SELAS — distinction revenus distribués ≷ 10 % capital — analyse flux par flux |
 | CC, 13 décembre 2012, n° 2012-659 DC | Contributions sociales et principe d'égalité |
+| CE, Sect., 22 juin 2007, *Lesourd*, n° 288206 | Principe d'effet utile dans l'interprétation des textes — cité par Avocat (R2) |

@@ -687,3 +687,165 @@ Le contribuable maintient sa demande de prise de position formelle sur cette bas
 Pour la société BELUGA PARIS,
 M. Mohamed Amine BAATOUT
 Président
+
+---
+
+# [DRFIP] Contre-réplique — L'impossibilité structurelle alléguée résulte des choix juridiques du contribuable — 2026-04-05
+
+Monsieur,
+
+L'administration a pris connaissance de votre réplique et prend acte de la concession sur l'analyse grammaticale de l'article L. 136-6, I, f) du CSS. Le débat se trouve utilement resserré.
+
+L'argumentation du contribuable se concentre désormais sur un argument unique : l'**impossibilité structurelle** de soumettre le BIC d'une SAS à l'IR aux contributions des articles L. 136-1 à L. 136-5 priverait d'**effet utile** la clause d'exception du f) de l'article L. 136-6, I.
+
+L'administration répond point par point.
+
+---
+
+## I. LA CLAUSE D'EXCEPTION N'EST PAS UNE CLAUSE MORTE
+
+### A. La clause a plein effet pour de nombreuses catégories de BIC/BNC/BA
+
+Le contribuable soutient que la lecture de l'administration ferait de la clause d'exception « une lettre morte pour toute une catégorie de revenus professionnels » (§ II.B de sa réplique).
+
+L'administration relève que cette affirmation est **inexacte en fait et en droit**. La clause d'exception de l'article L. 136-6, I, f) a plein effet pour de nombreuses configurations dans lesquelles des BIC/BNC/BA sont effectivement assujettis aux contributions des articles L. 136-1 à L. 136-5. À titre d'illustration :
+
+| Configuration | Contribution d'activité applicable | Clause d'exception |
+|---------------|-----------------------------------|--------------------|
+| Entrepreneur individuel (BIC/BNC) | CSG d'activité TNS (art. L. 136-3 CSS) | **S'applique** — le BIC/BNC est exclu de L. 136-6 |
+| Gérant majoritaire de SARL à l'IR | CSG d'activité TNS (art. L. 136-3 CSS) | **S'applique** — la quote-part est exclue de L. 136-6 |
+| Exploitant agricole (BA) | CSG d'activité agricole (art. L. 136-4 CSS) | **S'applique** — le BA est exclu de L. 136-6 |
+| Associé exerçant d'une SELAS | CSG salariale (art. L. 136-1-1 CSS) pour la fraction ≤ 10 % du capital | **S'applique** — pour cette fraction (CE, 20 oct. 2021, n° 440375) |
+| Président rémunéré d'une SAS à l'IR | CSG salariale (art. L. 136-1-1 CSS) sur la rémunération | **S'applique** — pour la fraction déclarée en DSN |
+
+La clause d'exception remplit une fonction essentielle : empêcher la **double imposition** des BIC/BNC/BA déjà soumis à des contributions d'activité. Cette fonction est pleinement opérante et quotidiennement appliquée pour des millions de contribuables.
+
+### B. Le principe d'effet utile n'impose pas qu'une clause s'applique à toute configuration factuelle
+
+Le principe d'effet utile (*ut res magis valeat quam pereat*), tel qu'appliqué par le Conseil d'État (CE, Sect., 22 juin 2007, *Lesourd*, n° 288206, cité par le demandeur), impose d'interpréter un texte de manière à lui conférer **un** effet — c'est-à-dire à éviter qu'il soit totalement dépourvu de portée.
+
+Ce principe **n'exige pas** qu'une clause s'applique à **toute** configuration factuelle concevable. Il suffit qu'elle produise un effet dans au moins certaines situations — ce qui est amplement le cas, comme démontré ci-dessus.
+
+Le raisonnement du contribuable procède d'une extension injustifiée du principe d'effet utile. Il revient à soutenir que toute clause d'exception doit pouvoir bénéficier à tout contribuable dans toute situation, sous peine d'être « morte ». Cette lecture dénaturerait le mécanisme même des clauses d'exception, dont la nature est précisément de ne jouer que lorsque leurs conditions sont réunies.
+
+---
+
+## II. L'« IMPOSSIBILITÉ STRUCTURELLE » RÉSULTE DES CHOIX JURIDIQUES DU CONTRIBUABLE
+
+### A. Trois choix volontaires produisent le résultat contesté
+
+Le contribuable présente l'absence de mécanisme de collecte comme une « lacune organisationnelle » imputable à l'administration. L'administration oppose que cette situation résulte de la **combinaison de trois choix juridiques volontaires** :
+
+**1° Le choix de la forme SAS** (plutôt que SARL, EURL ou entreprise individuelle). En SAS, le président relève du régime des assimilés salariés (art. L. 311-3, 23° CSS), avec affiliation conditionnée à la perception d'une rémunération. En SARL, le gérant majoritaire relève du régime des travailleurs non salariés (art. L. 611-1 CSS), avec affiliation de plein droit et soumission de la quote-part de bénéfice aux cotisations et contributions sociales via l'article L. 136-3 CSS et la déclaration n° 2042-DRITI — et la clause d'exception de L. 136-6, I, f) s'applique pleinement.
+
+**2° Le choix de ne percevoir aucune rémunération** au titre du mandat de président. Ce choix, librement décidé par les organes sociaux de la SAS, rompt le lien d'affiliation au régime général (art. L. 311-3, 23° CSS) et exclut toute DSN.
+
+**3° L'option pour l'impôt sur le revenu** (art. 239 bis AB du CGI), qui rend les bénéfices fiscalement transparents entre les mains des associés dans la catégorie des BIC.
+
+Chacun de ces choix est licite. Leur combinaison produit un résultat fiscal et social déterminé — en l'occurrence, l'application de l'article L. 136-6. Ce résultat n'est pas une « lacune organisationnelle » ; c'est la **conséquence juridique directe** de décisions dont le contribuable avait la maîtrise intégrale.
+
+### B. Le contribuable disposait d'alternatives
+
+Le contribuable n'était pas contraint de s'organiser de telle sorte que la clause d'exception soit inapplicable. Il pouvait notamment :
+
+- constituer une **SARL** plutôt qu'une SAS — le gérant majoritaire d'une SARL à l'IR voit sa quote-part de BIC soumise aux cotisations TNS via la 2042-DRITI, et la clause d'exception joue ;
+- percevoir une **rémunération**, même modeste, au titre de son mandat de président — ce qui aurait déclenché l'affiliation au régime général, la DSN, et la soumission à la CSG salariale d'au moins cette fraction du revenu ;
+- **ne pas exercer l'option IR** (art. 239 bis AB), auquel cas les bénéfices resteraient soumis à l'IS et les distributions relèveraient du régime des revenus de capitaux mobiliers.
+
+L'impossibilité alléguée n'est donc pas « structurelle » au sens d'un vice du système juridique. Elle est **optionnelle** : elle découle d'un choix d'organisation que le contribuable a librement exercé et qu'il est libre de modifier.
+
+### C. L'administration n'a « fermé » aucun canal
+
+Le contribuable affirme que « *c'est l'administration qui, par le truchement de l'URSSAF, a fermé le seul canal possible de collecte* ».
+
+L'administration conteste cette formulation. L'URSSAF n'a « fermé » aucun canal : elle a constaté que le droit applicable ne crée **aucune obligation contributive** sur la quote-part de BIC d'un président de SAS non rémunéré. Il ne s'agit pas d'une impossibilité de payer une dette existante ; il s'agit de l'**absence de dette**.
+
+La distinction est fondamentale :
+
+- **Impossibilité de payer** : une contribution est légalement due, mais le contribuable ne peut techniquement s'en acquitter faute de canal de recouvrement. Ce cas de figure constituerait effectivement une injustice appelant un remède.
+- **Absence de dette** : aucune contribution n'est légalement due sur ce revenu au titre des articles L. 136-1 à L. 136-5, parce que le cadre juridique applicable ne le prévoit pas. Ce n'est pas une injustice ; c'est l'état du droit.
+
+La position de l'URSSAF n'est pas « *nous ne pouvons pas collecter* » mais « *aucune contribution n'est due* » (Pièce 6 : « *La quote-part de bénéfice n'est pas considérée comme un revenu d'activité [...] Elle n'est donc pas prise en compte pour le calcul des cotisations sociales* »). Cette nuance est décisive.
+
+---
+
+## III. L'ABSENCE DE RÉGIME INTERMÉDIAIRE EN DROIT POSITIF
+
+Le contribuable semble implicitement souhaiter un régime intermédiaire : l'exclusion du BIC du champ de l'article L. 136-6 (et donc du prélèvement de solidarité de 7,5 %), **sans** pour autant l'assujettissement aux cotisations d'activité complètes des articles L. 136-1 à L. 136-5.
+
+L'administration observe que **le droit positif ne prévoit pas un tel régime**. Le dispositif légal est binaire :
+
+- **soit** le BIC/BNC/BA a été assujetti aux contributions d'activité et de remplacement (art. L. 136-1 à L. 136-5) → il est exclu du champ de L. 136-6 ;
+- **soit** il ne l'a pas été → il relève de L. 136-6 et supporte les prélèvements sociaux patrimoniaux à 17,2 %.
+
+Il n'existe pas de troisième voie permettant de bénéficier de la seule CSG au taux d'activité (9,2 %) sans les cotisations sociales qui l'accompagnent. Le taux de CSG d'activité n'est pas un taux autonome ; il s'insère dans un ensemble contributif lié à un statut social déterminé (salarié, assimilé salarié, travailleur non salarié).
+
+Cette question — que le juge administratif poserait nécessairement en cas de recours — illustre la cohérence interne de la position de l'administration : si le BIC devait être exclu de L. 136-6, il devrait être affecté à l'un des régimes de L. 136-1 à L. 136-5, avec les cotisations correspondantes. Or, aucun de ces régimes n'est applicable en l'espèce — ce qui confirme que le BIC relève bien de L. 136-6.
+
+---
+
+## IV. SUR LA QUALIFICATION DE L'URSSAF ET LES FAITS INCOMPLETS
+
+L'administration concède que la prémisse factuelle de la réponse de l'URSSAF — « *dans l'hypothèse où le président n'est pas rémunéré, il ne relève d'aucun régime obligatoire de sécurité sociale* » — est **incomplète** s'agissant spécifiquement de M. BAATOUT, qui relève du régime général au titre de l'ARE et du régime micro-social au titre de sa micro-entreprise.
+
+**Toutefois**, la qualification juridique formulée par l'URSSAF porte sur la **nature intrinsèque de la quote-part de BIC d'une SAS** :
+
+> « *La quote-part de bénéfice n'est pas considérée comme un revenu d'activité car elle s'apparente à un revenu du patrimoine lié à la détention de parts sociales.* »
+
+Cette qualification ne dépend pas de la situation personnelle du détenteur des parts. Elle repose sur la **nature du flux de revenu** — un bénéfice découlant de la détention de 50 % du capital social — et non sur les affiliations parallèles de l'associé. Que M. BAATOUT soit par ailleurs bénéficiaire de l'ARE ou micro-entrepreneur ne modifie pas la nature de la quote-part, qui demeure un revenu lié à la détention de parts sociales.
+
+L'URSSAF, même pleinement informée de la situation de M. BAATOUT, aurait formulé la même conclusion : la quote-part de BIC n'entre pas dans l'assiette des cotisations et contributions qu'elle recouvre.
+
+---
+
+## V. SUR L'ARGUMENT DU RISQUE
+
+L'administration prend acte de l'objection du contribuable selon laquelle une qualification juridique ne saurait être fondée sur ses conséquences financières. L'administration confirme que ce point ne constituait pas un fondement juridique mais une observation portée à la connaissance du contribuable dans un souci de transparence.
+
+L'administration relève néanmoins que le contribuable, s'il demande l'exclusion du BIC du champ de L. 136-6, **ne propose aucun régime de substitution**. La question posée au juge serait nécessairement : si le BIC n'est pas dans L. 136-6, à quel régime contributif est-il soumis ? Les seules réponses juridiquement possibles conduisent soit à des cotisations d'activité complètes (résultat défavorable), soit à un vide juridique total (aucune contribution) — résultat que le contribuable ne semble pas non plus revendiquer.
+
+---
+
+## VI. SUR LES OBSERVATIONS HORS PÉRIMÈTRE
+
+L'administration prend acte de la réserve du contribuable. Elle confirme que les observations formulées aux §§ IV.B, IX.C et IX.D de sa réponse initiale demeurent dans son champ de compétence et pourront faire l'objet de contrôles ou demandes de renseignements ultérieurs. L'absence de réponse dans le cadre du présent échange n'emporte aucune renonciation de l'administration à ses prérogatives de contrôle.
+
+---
+
+## VII. APPRÉCIATION LOYALE DE L'ARGUMENT — RECONNAISSANCE ET LIMITES
+
+L'administration, soucieuse de rigueur dans le débat contradictoire, reconnaît que l'argument de l'impossibilité structurelle soulève une **question juridique réelle**, qui n'a pas été tranchée par le Conseil d'État dans la configuration spécifique de la SAS à l'IR.
+
+Il est exact que le président non rémunéré d'une SAS à l'IR ne dispose, en l'état du droit, d'aucun canal permettant de soumettre volontairement sa quote-part de BIC aux contributions d'activité. Il est également exact qu'aucune instruction administrative (BOI) ne traite spécifiquement et exhaustivement de cette configuration.
+
+**Toutefois**, l'administration maintient que :
+
+1. cette situation résulte de la **combinaison de choix juridiques** librement exercés par le contribuable ;
+2. la clause d'exception **conserve plein effet utile** pour les nombreuses configurations dans lesquelles des BIC/BNC/BA sont effectivement soumis aux contributions d'activité ;
+3. l'absence de canal de collecte traduit une **absence de dette légale**, non une impossibilité de s'acquitter d'une dette existante ;
+4. le droit positif ne prévoyant **aucun régime intermédiaire**, l'exclusion du BIC du champ de L. 136-6 créerait un vide juridique ou exposerait le contribuable à des cotisations d'activité complètes ;
+5. le **remède approprié** à la situation dénoncée par le contribuable est d'ordre **législatif** — une intervention du législateur créant un mécanisme adapté aux SAS à l'IR — et non d'ordre interprétatif. L'administration applique le droit en vigueur et ne peut s'y substituer ;
+6. la voie de la **question prioritaire de constitutionnalité** est ouverte au contribuable devant le juge administratif. L'administration relève toutefois que le Conseil constitutionnel a jugé conforme à la Constitution le principe de taux différenciés de contributions sociales selon la nature des revenus (CC, 13 décembre 2012, n° 2012-659 DC), et que l'article L. 136-6 ne crée pas une inégalité de traitement entre contribuables placés dans la même situation, mais une différence de traitement entre revenus de natures différentes — les uns ayant supporté des contributions d'activité, les autres non.
+
+---
+
+## VIII. CONCLUSION — MAINTIEN DE LA POSITION
+
+Au vu de l'ensemble des échanges, **l'administration maintient intégralement sa position**.
+
+La quote-part de BIC de la SAS Beluga Paris revenant à M. Mohamed Amine BAATOUT relève des prélèvements sociaux au taux global de **17,2 %** en application de l'article L. 136-6, I, f) du CSS, à déclarer en **case 5HY** de la déclaration complémentaire n° 2042 C PRO.
+
+L'argument de l'impossibilité structurelle, s'il soulève une question méritant attention, ne modifie pas l'analyse juridique dès lors que :
+- la clause d'exception conserve son effet utile pour d'autres configurations ;
+- la situation résulte des choix juridiques du contribuable ;
+- l'absence de soumission du BIC aux contributions d'activité traduit une absence de dette, non un empêchement de paiement ;
+- et aucun régime juridique intermédiaire n'existe en droit positif.
+
+Les voies de recours indiquées dans la réponse initiale demeurent ouvertes.
+
+Je vous prie d'agréer, Monsieur, l'assurance de ma considération distinguée.
+
+Pour la Directrice régionale des Finances publiques,
+L'inspectrice divisionnaire des Finances publiques,
+
+Annick LOUBIÈRE
