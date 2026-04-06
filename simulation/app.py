@@ -171,90 +171,92 @@ with tab_compare:
     with col2:
         st.subheader(f"Avec salaire ({fmt(salaire_net)} net)")
 
-        gross = sw["salaire_brut"]
-        rate_low = _salariale_rate_below_pass()
-        if gross <= PASS:
-            brut_formula = (
-                f"Taux salarial total (≤ PASS) = {rate_low:.4%}\n\n"
-                f"Brut = Net / (1 - {rate_low:.4%})\n\n"
-                f"= {fmt(salaire_net)} / {1 - rate_low:.4f} = **{fmt(gross)}**"
-            )
+        if salaire_net == 0:
+            st.info("Identique au scénario sans salaire. Augmentez le salaire pour voir la comparaison.")
         else:
-            rate_high = _salariale_rate_above_pass()
-            net_at_pass = PASS * (1 - rate_low)
-            brut_formula = (
-                f"Brut > PASS ({fmt(PASS)}), calcul en 2 tranches :\n\n"
-                f"- Tranche 1 (≤ PASS) : taux salarial = {rate_low:.4%} → net au PASS = {fmt(net_at_pass)}\n"
-                f"- Tranche 2 (> PASS) : taux marginal = {rate_high:.4%}\n\n"
-                f"Brut = PASS + (Net - {fmtn(net_at_pass)}) / (1 - {rate_high:.4%})\n\n"
-                f"= {fmt(PASS)} + {fmt(salaire_net - net_at_pass)} / {1 - rate_high:.4f} = **{fmt(gross)}**"
-            )
-        metric_with_detail("Salaire brut", fmt(gross), brut_formula, key="ws_brut")
+            gross = sw["salaire_brut"]
+            rate_low = _salariale_rate_below_pass()
+            if gross <= PASS:
+                brut_formula = (
+                    f"Taux salarial total (≤ PASS) = {rate_low:.4%}\n\n"
+                    f"Brut = Net / (1 - {rate_low:.4%})\n\n"
+                    f"= {fmt(salaire_net)} / {1 - rate_low:.4f} = **{fmt(gross)}**"
+                )
+            else:
+                rate_high = _salariale_rate_above_pass()
+                net_at_pass = PASS * (1 - rate_low)
+                brut_formula = (
+                    f"Brut > PASS ({fmt(PASS)}), calcul en 2 tranches :\n\n"
+                    f"- Tranche 1 (≤ PASS) : taux salarial = {rate_low:.4%} → net au PASS = {fmt(net_at_pass)}\n"
+                    f"- Tranche 2 (> PASS) : taux marginal = {rate_high:.4%}\n\n"
+                    f"Brut = PASS + (Net - {fmtn(net_at_pass)}) / (1 - {rate_high:.4%})\n\n"
+                    f"= {fmt(PASS)} + {fmt(salaire_net - net_at_pass)} / {1 - rate_high:.4f} = **{fmt(gross)}**"
+                )
+            metric_with_detail("Salaire brut", fmt(gross), brut_formula, key="ws_brut")
 
-        pat = sw["patronales"]
-        pat_lines = [
-            "| Cotisation | Assiette | Taux | Montant |",
-            "|---|---|---|---|",
-            f"| Maladie | Brut | {'7%' if gross <= 54055 else '13%'} | {fmt(pat['maladie'])} |",
-            f"| Vieillesse plaf. | min(Brut, PASS) | 8,55% | {fmt(pat['vieillesse_plafonnee'])} |",
-            f"| Vieillesse déplaf. | Brut | 2,02% | {fmt(pat['vieillesse_deplafonnee'])} |",
-            f"| Alloc. familiales | Brut | {'3,45%' if gross <= 75677 else '5,25%'} | {fmt(pat['allocations_familiales'])} |",
-            f"| AT/MP | Brut | 1% | {fmt(pat['atmp'])} |",
-            f"| Retraite comp. T1 | min(Brut, PASS) | 4,72% | {fmt(pat['retraite_comp_t1'])} |",
-            f"| Retraite comp. T2 | Brut - PASS | 12,95% | {fmt(pat['retraite_comp_t2'])} |",
-            f"| CEG T1 | min(Brut, PASS) | 1,29% | {fmt(pat['ceg_t1'])} |",
-            f"| CEG T2 | Brut - PASS | 1,62% | {fmt(pat['ceg_t2'])} |",
-            f"| CSA | Brut | 0,3% | {fmt(pat['csa'])} |",
-            f"| FNAL | min(Brut, PASS) | 0,1% | {fmt(pat['fnal'])} |",
-            f"| Formation | Brut | 0,55% | {fmt(pat['formation'])} |",
-            f"| Apprentissage | Brut | 0,44% | {fmt(pat['apprentissage'])} |",
-            f"| **Total** | | | **{fmt(pat['total'])}** |",
-        ]
-        metric_with_detail("Charges patronales", fmt(pat["total"]),
-            f"Assiette : Brut = {fmt(gross)}, PASS = {fmt(PASS)}\n\n" + "\n".join(pat_lines),
-            key="ws_pat")
+            pat = sw["patronales"]
+            pat_lines = [
+                "| Cotisation | Assiette | Taux | Montant |",
+                "|---|---|---|---|",
+                f"| Maladie | Brut | {'7%' if gross <= 54055 else '13%'} | {fmt(pat['maladie'])} |",
+                f"| Vieillesse plaf. | min(Brut, PASS) | 8,55% | {fmt(pat['vieillesse_plafonnee'])} |",
+                f"| Vieillesse déplaf. | Brut | 2,02% | {fmt(pat['vieillesse_deplafonnee'])} |",
+                f"| Alloc. familiales | Brut | {'3,45%' if gross <= 75677 else '5,25%'} | {fmt(pat['allocations_familiales'])} |",
+                f"| AT/MP | Brut | 1% | {fmt(pat['atmp'])} |",
+                f"| Retraite comp. T1 | min(Brut, PASS) | 4,72% | {fmt(pat['retraite_comp_t1'])} |",
+                f"| Retraite comp. T2 | Brut - PASS | 12,95% | {fmt(pat['retraite_comp_t2'])} |",
+                f"| CEG T1 | min(Brut, PASS) | 1,29% | {fmt(pat['ceg_t1'])} |",
+                f"| CEG T2 | Brut - PASS | 1,62% | {fmt(pat['ceg_t2'])} |",
+                f"| CSA | Brut | 0,3% | {fmt(pat['csa'])} |",
+                f"| FNAL | min(Brut, PASS) | 0,1% | {fmt(pat['fnal'])} |",
+                f"| Formation | Brut | 0,55% | {fmt(pat['formation'])} |",
+                f"| Apprentissage | Brut | 0,44% | {fmt(pat['apprentissage'])} |",
+                f"| **Total** | | | **{fmt(pat['total'])}** |",
+            ]
+            metric_with_detail("Charges patronales", fmt(pat["total"]),
+                f"Assiette : Brut = {fmt(gross)}, PASS = {fmt(PASS)}\n\n" + "\n".join(pat_lines),
+                key="ws_pat")
 
-        sal = sw["salariales"]
-        assiette_csg = gross * ASSIETTE_CSG_COEFF
-        sal_lines = [
-            "| Cotisation | Assiette | Taux | Montant |",
-            "|---|---|---|---|",
-            f"| Vieillesse plaf. | min(Brut, PASS) | 6,90% | {fmt(sal['vieillesse_plafonnee'])} |",
-            f"| Vieillesse déplaf. | Brut | 0,40% | {fmt(sal['vieillesse_deplafonnee'])} |",
-            f"| Retraite comp. T1 | min(Brut, PASS) | 3,15% | {fmt(sal['retraite_comp_t1'])} |",
-            f"| Retraite comp. T2 | Brut - PASS | 8,64% | {fmt(sal['retraite_comp_t2'])} |",
-            f"| CEG T1 | min(Brut, PASS) | 0,86% | {fmt(sal['ceg_t1'])} |",
-            f"| CEG T2 | Brut - PASS | 1,08% | {fmt(sal['ceg_t2'])} |",
-            f"| CSG déductible | 98,25% × Brut = {fmtn(assiette_csg)} | 6,80% | {fmt(sal['csg_deductible'])} |",
-            f"| CSG non déductible | 98,25% × Brut | 2,40% | {fmt(sal['csg_non_deductible'])} |",
-            f"| CRDS | 98,25% × Brut | 0,50% | {fmt(sal['crds'])} |",
-            f"| **Total** | | | **{fmt(sal['total'])}** |",
-            f"\n**Net reçu** = Brut - Total = {fmt(gross)} - {fmt(sal['total'])} = **{fmt(sal['net_received'])}**",
-            f"\n**Net imposable** = Brut - cotisations - CSG déd. = **{fmt(sal['net_imposable'])}**",
-        ]
-        metric_with_detail("Cotisations salariales", fmt(sal["total"]),
-            "\n".join(sal_lines), key="ws_sal")
+            sal = sw["salariales"]
+            assiette_csg = gross * ASSIETTE_CSG_COEFF
+            sal_lines = [
+                "| Cotisation | Assiette | Taux | Montant |",
+                "|---|---|---|---|",
+                f"| Vieillesse plaf. | min(Brut, PASS) | 6,90% | {fmt(sal['vieillesse_plafonnee'])} |",
+                f"| Vieillesse déplaf. | Brut | 0,40% | {fmt(sal['vieillesse_deplafonnee'])} |",
+                f"| Retraite comp. T1 | min(Brut, PASS) | 3,15% | {fmt(sal['retraite_comp_t1'])} |",
+                f"| Retraite comp. T2 | Brut - PASS | 8,64% | {fmt(sal['retraite_comp_t2'])} |",
+                f"| CEG T1 | min(Brut, PASS) | 0,86% | {fmt(sal['ceg_t1'])} |",
+                f"| CEG T2 | Brut - PASS | 1,08% | {fmt(sal['ceg_t2'])} |",
+                f"| CSG déductible | 98,25% × Brut = {fmtn(assiette_csg)} | 6,80% | {fmt(sal['csg_deductible'])} |",
+                f"| CSG non déductible | 98,25% × Brut | 2,40% | {fmt(sal['csg_non_deductible'])} |",
+                f"| CRDS | 98,25% × Brut | 0,50% | {fmt(sal['crds'])} |",
+                f"| **Total** | | | **{fmt(sal['total'])}** |",
+                f"\n**Net reçu** = Brut - Total = {fmt(gross)} - {fmt(sal['total'])} = **{fmt(sal['net_received'])}**",
+                f"\n**Net imposable** = Brut - cotisations - CSG déd. = **{fmt(sal['net_imposable'])}**",
+            ]
+            metric_with_detail("Cotisations salariales", fmt(sal["total"]),
+                "\n".join(sal_lines), key="ws_sal")
 
-        metric_with_detail("BIC résiduel", fmt(sw["bic"]),
-            f"= Résultat - Coût total salaire\n\n"
-            f"= {fmt(sw['resultat'])} - (Brut + Patronales)\n\n"
-            f"= {fmt(sw['resultat'])} - ({fmt(gross)} + {fmt(pat['total'])})\n\n"
-            f"= {fmt(sw['resultat'])} - {fmt(sw['cout_total_salaire'])} = **{fmt(sw['bic'])}**",
-            key="ws_bic")
+            metric_with_detail("BIC résiduel", fmt(sw["bic"]),
+                f"= Résultat - Coût total salaire\n\n"
+                f"= {fmt(sw['resultat'])} - (Brut + Patronales)\n\n"
+                f"= {fmt(sw['resultat'])} - ({fmt(gross)} + {fmt(pat['total'])})\n\n"
+                f"= {fmt(sw['resultat'])} - {fmt(sw['cout_total_salaire'])} = **{fmt(sw['bic'])}**",
+                key="ws_bic")
 
-        ps_w = sw["ps"]
-        metric_with_detail(f"PS {PS_TOTAL_PCT} (sur BIC)", fmt(ps_w["total"]),
-            f"Assiette = BIC résiduel = {fmt(sw['bic'])}\n\n"
-            f"| Contribution | Taux | Montant |\n"
-            f"|---|---|---|\n"
-            f"| CSG | {PS_CSG_PCT} | {fmt(ps_w['csg'])} |\n"
-            f"| CRDS | {PS_CRDS_PCT} | {fmt(ps_w['crds'])} |\n"
-            f"| Prélèvement de solidarité | {PS_SOL_PCT} | {fmt(ps_w['solidarite'])} |\n"
-            f"| **Total** | **{PS_TOTAL_PCT}** | **{fmt(ps_w['total'])}** |",
-            key="ws_ps")
+            ps_w = sw["ps"]
+            metric_with_detail(f"PS {PS_TOTAL_PCT} (sur BIC)", fmt(ps_w["total"]),
+                f"Assiette = BIC résiduel = {fmt(sw['bic'])}\n\n"
+                f"| Contribution | Taux | Montant |\n"
+                f"|---|---|---|\n"
+                f"| CSG | {PS_CSG_PCT} | {fmt(ps_w['csg'])} |\n"
+                f"| CRDS | {PS_CRDS_PCT} | {fmt(ps_w['crds'])} |\n"
+                f"| Prélèvement de solidarité | {PS_SOL_PCT} | {fmt(ps_w['solidarite'])} |\n"
+                f"| **Total** | **{PS_TOTAL_PCT}** | **{fmt(ps_w['total'])}** |",
+                key="ws_ps")
 
-        ir_w = sw["ir"]
-        if salaire_net > 0:
+            ir_w = sw["ir"]
             abat = sw.get("abattement_10", 0)
             sal_apres = sw.get("salaire_apres_abattement", 0)
             bic_imp = sw.get("bic_imposable", 0)
@@ -270,26 +272,24 @@ with tab_compare:
                 f"= {fmt(sal_apres)} + {fmt(bic_imp)} = **{fmt(ir_w['revenu_imposable'])}**\n\n"
                 f"---\n\n" + ir_detail(ir_w)
             )
-        else:
-            ir_w_formula = ir_detail(ir_w)
-        metric_with_detail("IR", fmt(ir_w["ir"]), ir_w_formula, key="ws_ir")
+            metric_with_detail("IR", fmt(ir_w["ir"]), ir_w_formula, key="ws_ir")
 
-        metric_with_detail("Total prélevé", fmt(sw["total_prelevements"]),
-            f"= Patronales + Salariales + PS + IR\n\n"
-            f"= {fmt(pat['total'])} + {fmt(sal['total'])} + {fmt(ps_w['total'])} + {fmt(ir_w['ir'])}\n\n"
-            f"= **{fmt(sw['total_prelevements'])}**",
-            key="ws_total")
+            metric_with_detail("Total prélevé", fmt(sw["total_prelevements"]),
+                f"= Patronales + Salariales + PS + IR\n\n"
+                f"= {fmt(pat['total'])} + {fmt(sal['total'])} + {fmt(ps_w['total'])} + {fmt(ir_w['ir'])}\n\n"
+                f"= **{fmt(sw['total_prelevements'])}**",
+                key="ws_total")
 
-        metric_with_detail("Net en poche", fmt(sw["net_en_poche"]),
-            f"= Salaire net reçu + BIC résiduel - PS - IR\n\n"
-            f"= {fmt(sal['net_received'])} + {fmt(sw['bic'])} - {fmt(ps_w['total'])} - {fmt(ir_w['ir'])}\n\n"
-            f"= **{fmt(sw['net_en_poche'])}**",
-            key="ws_net")
+            metric_with_detail("Net en poche", fmt(sw["net_en_poche"]),
+                f"= Salaire net reçu + BIC résiduel - PS - IR\n\n"
+                f"= {fmt(sal['net_received'])} + {fmt(sw['bic'])} - {fmt(ps_w['total'])} - {fmt(ir_w['ir'])}\n\n"
+                f"= **{fmt(sw['net_en_poche'])}**",
+                key="ws_net")
 
-        metric_with_detail("Taux effectif global", pct(sw["taux_effectif"]),
-            f"= Total prélevé / Résultat\n\n"
-            f"= {fmt(sw['total_prelevements'])} / {fmt(sw['resultat'])} = **{pct(sw['taux_effectif'])}**",
-            key="ws_taux")
+            metric_with_detail("Taux effectif global", pct(sw["taux_effectif"]),
+                f"= Total prélevé / Résultat\n\n"
+                f"= {fmt(sw['total_prelevements'])} / {fmt(sw['resultat'])} = **{pct(sw['taux_effectif'])}**",
+                key="ws_taux")
 
     # Delta
     delta = sw["net_en_poche"] - s["net_en_poche"]
