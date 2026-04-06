@@ -54,12 +54,12 @@ PS_SOLIDARITE = 0.075
 PS_TOTAL = PS_CSG + PS_CRDS + PS_SOLIDARITE  # 0.172
 PS_CSG_DEDUCTIBLE_IR = 0.068  # part de CSG déductible du revenu imposable
 
-# --- Impôt sur le revenu (barème 2025 sur revenus 2024) ---
+# --- Impôt sur le revenu (barème 2026 sur revenus 2025) ---
 IR_BAREME = [
-    (11_294, 0.00),
-    (28_797, 0.11),
-    (82_341, 0.30),
-    (177_106, 0.41),
+    (11_600, 0.00),
+    (29_579, 0.11),
+    (84_577, 0.30),
+    (181_917, 0.41),
     (inf, 0.45),
 ]
 
