@@ -45,6 +45,7 @@ from simulation.constants import (
     SALARIALE_VIEILLESSE_PLAFONNEE,
     SEUIL_AF,
     SEUIL_MALADIE,
+    JEI_SALARY_CAP,
 )
 
 
@@ -88,6 +89,28 @@ def calc_patronales(gross: float) -> dict:
         "apprentissage": apprentissage,
         "total": total,
     }
+
+
+def calc_patronales_jei(gross: float) -> dict:
+    """JEI: exempt maladie, vieillesse, AF on portion up to 4.5 SMIC cap."""
+    normal = calc_patronales(gross)
+    capped = min(gross, JEI_SALARY_CAP)
+
+    # Exoneration amounts (same rate logic as normal, applied on capped portion)
+    exo_maladie = capped * (PATRONALE_MALADIE_REDUIT if gross <= SEUIL_MALADIE else PATRONALE_MALADIE_PLEIN)
+    exo_vieillesse_p = min(capped, PASS) * PATRONALE_VIEILLESSE_PLAFONNEE
+    exo_vieillesse_d = capped * PATRONALE_VIEILLESSE_DEPLAFONNEE
+    exo_af = capped * (PATRONALE_AF_REDUIT if gross <= SEUIL_AF else PATRONALE_AF_PLEIN)
+    exoneration = exo_maladie + exo_vieillesse_p + exo_vieillesse_d + exo_af
+
+    result = dict(normal)
+    result["maladie"] -= exo_maladie
+    result["vieillesse_plafonnee"] -= exo_vieillesse_p
+    result["vieillesse_deplafonnee"] -= exo_vieillesse_d
+    result["allocations_familiales"] -= exo_af
+    result["exoneration_jei"] = exoneration
+    result["total"] -= exoneration
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -270,30 +293,22 @@ def scenario_no_salary(resultat: float) -> dict:
     }
 
 
-def scenario_with_salary(resultat: float, net_salary: float) -> dict:
-    """With salary: part goes to salary (with charges), rest is BIC."""
+def _build_salary_scenario(resultat: float, net_salary: float, patronales_fn=calc_patronales) -> dict:
+    """Core salary scenario logic, parametrized by patronales calculation."""
     if net_salary <= 0:
         return scenario_no_salary(resultat)
 
     gross = net_to_gross(net_salary)
-    patronales = calc_patronales(gross)
+    patronales = patronales_fn(gross)
     salariales = calc_salariales(gross)
 
     cout_total_salaire = gross + patronales["total"]
-
-    # BIC résiduel = résultat - coût total du salaire pour la SAS
     bic = max(0, resultat - cout_total_salaire)
-
-    # PS on BIC
     ps = calc_ps_patrimoine(bic)
 
-    # IR calculation
-    # Salary part: net_imposable with 10% abattement
     sal_net_imposable = salariales["net_imposable"]
     abattement = _abattement_10(sal_net_imposable)
     salaire_apres_abattement = sal_net_imposable - abattement
-
-    # BIC part: BIC - CSG déductible patrimoine
     bic_imposable = bic - ps["csg_deductible_ir"]
 
     revenu_imposable = salaire_apres_abattement + bic_imposable
@@ -321,17 +336,27 @@ def scenario_with_salary(resultat: float, net_salary: float) -> dict:
     }
 
 
+def scenario_with_salary(resultat: float, net_salary: float) -> dict:
+    """With salary: part goes to salary (with charges), rest is BIC."""
+    return _build_salary_scenario(resultat, net_salary, calc_patronales)
+
+
+def scenario_jei(resultat: float, net_salary: float) -> dict:
+    """With salary + JEI: exempt maladie/vieillesse/AF on patronales."""
+    return _build_salary_scenario(resultat, net_salary, calc_patronales_jei)
+
+
 # ---------------------------------------------------------------------------
 # Optimizer
 # ---------------------------------------------------------------------------
 
-def _max_feasible_net(resultat: float) -> float:
+def _max_feasible_net(resultat: float, patronales_fn=calc_patronales) -> float:
     """Max net salary such that BIC ≥ 0 (binary search for safety)."""
     lo, hi = 0, resultat
     for _ in range(60):
         mid = (lo + hi) / 2
         gross = net_to_gross(mid)
-        cout = gross + calc_patronales(gross)["total"]
+        cout = gross + patronales_fn(gross)["total"]
         if cout <= resultat:
             lo = mid
         else:
@@ -339,44 +364,63 @@ def _max_feasible_net(resultat: float) -> float:
     return lo
 
 
-def find_optimal_salary(resultat: float) -> dict:
-    """Find net salary that maximizes net_en_poche."""
-    max_net = _max_feasible_net(resultat)
+def _find_optimal(resultat: float, scenario_fn, patronales_fn) -> dict:
+    """Find net salary that maximizes net_en_poche for a given scenario function."""
+    max_net = _max_feasible_net(resultat, patronales_fn)
     if max_net <= 0:
         s = scenario_no_salary(resultat)
         return {"optimal_net_salary": 0, "scenario": s}
 
     def neg_net(x):
-        return -scenario_with_salary(resultat, x)["net_en_poche"]
+        return -scenario_fn(resultat, x)["net_en_poche"]
 
     result = minimize_scalar(neg_net, bounds=(0, max_net), method="bounded",
                              options={"xatol": 10, "maxiter": 200})
     opt_salary = result.x
-    # Also check endpoints
     candidates = [
         (0, scenario_no_salary(resultat)["net_en_poche"]),
-        (opt_salary, scenario_with_salary(resultat, opt_salary)["net_en_poche"]),
-        (max_net, scenario_with_salary(resultat, max_net)["net_en_poche"]),
+        (opt_salary, scenario_fn(resultat, opt_salary)["net_en_poche"]),
+        (max_net, scenario_fn(resultat, max_net)["net_en_poche"]),
     ]
     best_salary, best_net = max(candidates, key=lambda c: c[1])
-    scenario = scenario_with_salary(resultat, best_salary) if best_salary > 0 else scenario_no_salary(resultat)
+    scenario = scenario_fn(resultat, best_salary) if best_salary > 0 else scenario_no_salary(resultat)
     return {"optimal_net_salary": best_salary, "scenario": scenario}
+
+
+def find_optimal_salary(resultat: float) -> dict:
+    return _find_optimal(resultat, scenario_with_salary, calc_patronales)
+
+
+def find_optimal_salary_jei(resultat: float) -> dict:
+    return _find_optimal(resultat, scenario_jei, calc_patronales_jei)
 
 
 def compute_curve(resultat: float, n_points: int = 200) -> list[dict]:
     """Compute net_en_poche for a range of salary values (for charting)."""
     max_net = _max_feasible_net(resultat)
-    if max_net <= 0:
-        return [{"salaire_net": 0, **scenario_no_salary(resultat)}]
+    max_net_jei = _max_feasible_net(resultat, calc_patronales_jei)
+    hi = max(max_net, max_net_jei)
+    if hi <= 0:
+        s = scenario_no_salary(resultat)
+        return [{"salaire_net": 0, "net_en_poche": s["net_en_poche"],
+                 "net_en_poche_jei": s["net_en_poche"],
+                 "total_prelevements": s["total_prelevements"],
+                 "cotisations_sociales": s["ps"]["total"], "ir": s["ir"]["ir"]}]
 
-    step = max_net / n_points
+    step = hi / n_points
     points = []
     for i in range(n_points + 1):
         net_sal = i * step
-        s = scenario_with_salary(resultat, net_sal) if net_sal > 0 else scenario_no_salary(resultat)
+        if net_sal <= 0:
+            s = scenario_no_salary(resultat)
+            s_jei = s
+        else:
+            s = scenario_with_salary(resultat, net_sal)
+            s_jei = scenario_jei(resultat, net_sal)
         points.append({
             "salaire_net": net_sal,
             "net_en_poche": s["net_en_poche"],
+            "net_en_poche_jei": s_jei["net_en_poche"],
             "total_prelevements": s["total_prelevements"],
             "taux_effectif": s["taux_effectif"],
             "cotisations_sociales": s["patronales"]["total"] + s["salariales"]["total"] + s["ps"]["total"],

@@ -12,9 +12,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from simulation.engine import (
+    calc_patronales_jei,
     compute_curve,
     find_optimal_salary,
+    find_optimal_salary_jei,
     net_to_gross,
+    scenario_jei,
     scenario_no_salary,
     scenario_with_salary,
     _max_feasible_net,
@@ -51,16 +54,19 @@ with st.sidebar:
     )
 
     run_optim = st.checkbox("Trouver le salaire optimal", value=False)
+    jei = st.checkbox("JEI (Jeune Entreprise Innovante)", value=False)
 
 # ---------------------------------------------------------------------------
 # Compute scenarios
 # ---------------------------------------------------------------------------
 s_no_sal = scenario_no_salary(resultat)
 s_with_sal = scenario_with_salary(resultat, salaire_net)
+s_jei = scenario_jei(resultat, salaire_net) if jei else None
 
 if run_optim:
     with st.spinner("Optimisation en cours..."):
         optim = find_optimal_salary(resultat)
+        optim_jei = find_optimal_salary_jei(resultat) if jei else None
 
 # ---------------------------------------------------------------------------
 # Helper
@@ -120,7 +126,8 @@ tab_compare, tab_sankey, tab_optim = st.tabs(["Comparaison", "Diagramme Sankey",
 
 # --- Tab 1: Comparison ---
 with tab_compare:
-    col1, col2 = st.columns(2)
+    cols = st.columns(3 if jei else 2)
+    col1, col2 = cols[0], cols[1]
 
     # ---- Sans salaire ----
     s = s_no_sal
@@ -291,18 +298,93 @@ with tab_compare:
                 f"= {fmt(sw['total_prelevements'])} / {fmt(sw['resultat'])} = **{pct(sw['taux_effectif'])}**",
                 key="ws_taux")
 
+    # ---- JEI ----
+    if jei and s_jei:
+        sj = s_jei
+        with cols[2]:
+            st.subheader(f"JEI ({fmt(salaire_net)} net)")
+
+            if salaire_net == 0:
+                st.info("Identique au scénario sans salaire. L'exonération JEI ne s'applique que sur le salaire.")
+            else:
+                gross_j = sj["salaire_brut"]
+                pat_j = sj["patronales"]
+                exo = pat_j.get("exoneration_jei", 0)
+
+                metric_with_detail("Salaire brut", fmt(gross_j),
+                    f"Identique au scénario avec salaire = **{fmt(gross_j)}**",
+                    key="jei_brut")
+
+                metric_with_detail("Charges patronales", fmt(pat_j["total"]),
+                    f"**Exonération JEI** : maladie, vieillesse, AF = **-{fmt(exo)}**\n\n"
+                    f"| Cotisation | Montant |\n"
+                    f"|---|---|\n"
+                    f"| Maladie | {fmt(pat_j['maladie'])} |\n"
+                    f"| Vieillesse plaf. | {fmt(pat_j['vieillesse_plafonnee'])} |\n"
+                    f"| Vieillesse déplaf. | {fmt(pat_j['vieillesse_deplafonnee'])} |\n"
+                    f"| Alloc. familiales | {fmt(pat_j['allocations_familiales'])} |\n"
+                    f"| AT/MP | {fmt(pat_j['atmp'])} |\n"
+                    f"| Retraite comp. T1 | {fmt(pat_j['retraite_comp_t1'])} |\n"
+                    f"| Retraite comp. T2 | {fmt(pat_j['retraite_comp_t2'])} |\n"
+                    f"| CEG T1 | {fmt(pat_j['ceg_t1'])} |\n"
+                    f"| CEG T2 | {fmt(pat_j['ceg_t2'])} |\n"
+                    f"| CSA | {fmt(pat_j['csa'])} |\n"
+                    f"| FNAL | {fmt(pat_j['fnal'])} |\n"
+                    f"| Formation | {fmt(pat_j['formation'])} |\n"
+                    f"| Apprentissage | {fmt(pat_j['apprentissage'])} |\n"
+                    f"| **Total** | **{fmt(pat_j['total'])}** |",
+                    key="jei_pat")
+
+                sal_j = sj["salariales"]
+                metric_with_detail("Cotisations salariales", fmt(sal_j["total"]),
+                    f"Identiques (JEI n'affecte pas les salariales) = **{fmt(sal_j['total'])}**",
+                    key="jei_sal")
+
+                metric_with_detail("BIC résiduel", fmt(sj["bic"]),
+                    f"= {fmt(sj['resultat'])} - ({fmt(gross_j)} + {fmt(pat_j['total'])}) = **{fmt(sj['bic'])}**",
+                    key="jei_bic")
+
+                ps_j = sj["ps"]
+                metric_with_detail(f"PS {PS_TOTAL_PCT} (sur BIC)", fmt(ps_j["total"]),
+                    f"= {fmt(sj['bic'])} × {PS_TOTAL_PCT} = **{fmt(ps_j['total'])}**",
+                    key="jei_ps")
+
+                ir_j = sj["ir"]
+                metric_with_detail("IR", fmt(ir_j["ir"]), ir_detail(ir_j), key="jei_ir")
+
+                metric_with_detail("Total prélevé", fmt(sj["total_prelevements"]),
+                    f"= {fmt(pat_j['total'])} + {fmt(sal_j['total'])} + {fmt(ps_j['total'])} + {fmt(ir_j['ir'])} = **{fmt(sj['total_prelevements'])}**",
+                    key="jei_total")
+
+                metric_with_detail("Net en poche", fmt(sj["net_en_poche"]),
+                    f"= {fmt(sal_j['net_received'])} + {fmt(sj['bic'])} - {fmt(ps_j['total'])} - {fmt(ir_j['ir'])} = **{fmt(sj['net_en_poche'])}**",
+                    key="jei_net")
+
+                metric_with_detail("Taux effectif global", pct(sj["taux_effectif"]),
+                    f"= {fmt(sj['total_prelevements'])} / {fmt(sj['resultat'])} = **{pct(sj['taux_effectif'])}**",
+                    key="jei_taux")
+
     # Delta
     delta = sw["net_en_poche"] - s["net_en_poche"]
     if salaire_net > 0:
         color = "green" if delta > 0 else "red"
-        st.markdown(f"**Différence net en poche : :{color}[{fmt(delta)}]**")
+        st.markdown(f"**Différence net en poche (salaire vs sans) : :{color}[{fmt(delta)}]**")
+    if jei and s_jei and salaire_net > 0:
+        delta_jei = s_jei["net_en_poche"] - s["net_en_poche"]
+        color_j = "green" if delta_jei > 0 else "red"
+        st.markdown(f"**Différence net en poche (JEI vs sans) : :{color_j}[{fmt(delta_jei)}]**")
 
     if run_optim:
         st.divider()
         opt_sal = optim["optimal_net_salary"]
         opt_net = optim["scenario"]["net_en_poche"]
-        st.success(f"Salaire optimal : **{fmt(opt_sal)}** net → Net en poche : **{fmt(opt_net)}** "
+        st.success(f"**Standard** — Salaire optimal : **{fmt(opt_sal)}** net → Net en poche : **{fmt(opt_net)}** "
                    f"(taux effectif {pct(optim['scenario']['taux_effectif'])})")
+        if jei and optim_jei:
+            opt_sal_j = optim_jei["optimal_net_salary"]
+            opt_net_j = optim_jei["scenario"]["net_en_poche"]
+            st.success(f"**JEI** — Salaire optimal : **{fmt(opt_sal_j)}** net → Net en poche : **{fmt(opt_net_j)}** "
+                       f"(taux effectif {pct(optim_jei['scenario']['taux_effectif'])})")
 
 # --- Tab 2: Sankey ---
 with tab_sankey:
@@ -312,6 +394,10 @@ with tab_sankey:
     if salaire_net > 0:
         st.subheader(f"Avec salaire ({fmt(salaire_net)} net)")
         st.plotly_chart(build_sankey_with_salary(s_with_sal), use_container_width=True)
+
+        if jei and s_jei:
+            st.subheader(f"Avec salaire + JEI ({fmt(salaire_net)} net)")
+            st.plotly_chart(build_sankey_with_salary(s_jei), use_container_width=True)
 
 # --- Tab 3: Optimization curve ---
 with tab_optim:
@@ -327,6 +413,10 @@ with tab_optim:
 
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=x, y=y_net, name="Net en poche", line=dict(color="#27ae60", width=3)))
+    if jei:
+        y_jei = [p["net_en_poche_jei"] for p in points]
+        fig.add_trace(go.Scatter(x=x, y=y_jei, name="Net en poche (JEI)",
+                                 line=dict(color="#8e44ad", width=3)))
     fig.add_trace(go.Scatter(x=x, y=y_ir, name="IR", line=dict(color="#e67e22", width=2, dash="dot")))
     fig.add_trace(go.Scatter(x=x, y=y_cotis, name="Cotisations sociales", line=dict(color="#e74c3c", width=2, dash="dot")))
 
@@ -339,10 +429,13 @@ with tab_optim:
         fig.add_vline(x=salaire_net, line_dash="dash", line_color="#3498db",
                       annotation_text=f"Salaire choisi: {fmt(salaire_net)}")
 
-    # Optimal marker
+    # Optimal markers
     if run_optim:
         fig.add_vline(x=optim["optimal_net_salary"], line_dash="dash", line_color="#27ae60",
                       annotation_text=f"Optimal: {fmt(optim['optimal_net_salary'])}")
+        if jei and optim_jei:
+            fig.add_vline(x=optim_jei["optimal_net_salary"], line_dash="dash", line_color="#8e44ad",
+                          annotation_text=f"Optimal JEI: {fmt(optim_jei['optimal_net_salary'])}")
 
     fig.update_layout(
         xaxis_title="Salaire net annuel (€)",

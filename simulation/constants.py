@@ -56,6 +56,10 @@ PS_SOLIDARITE = 0.075
 PS_TOTAL = PS_CSG + PS_CRDS + PS_SOLIDARITE  # 0.186
 PS_CSG_DEDUCTIBLE_IR = 0.068  # inchangé — le +1.4% est non déductible
 
+# --- JEI (Jeune Entreprise Innovante) ---
+JEI_SALARY_CAP = 4.5 * SMIC_ANNUEL  # plafond rémunération annuelle pour exonération (~97 300 €)
+JEI_EXONERATION_CAP = 5 * PASS  # plafond annuel exonération par établissement (235 500 €)
+
 # --- Impôt sur le revenu (barème 2026 sur revenus 2025) ---
 IR_BAREME = [
     (11_600, 0.00),
