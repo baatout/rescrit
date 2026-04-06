@@ -47,12 +47,14 @@ CSG_NON_DEDUCTIBLE = 0.024  # non déductible
 CRDS_SALAIRE = 0.005  # non déductible
 # Pas de chômage pour président de SAS
 
-# --- Prélèvements sociaux patrimoniaux ---
-PS_CSG = 0.092
+# --- Prélèvements sociaux patrimoniaux (LFSS 2026) ---
+# CSG patrimoine: 10.6% pour revenus du capital (BIC SAS IR inclus)
+# dont +1.4% = contribution financière pour l'autonomie (CFA), non déductible
+PS_CSG = 0.106
 PS_CRDS = 0.005
 PS_SOLIDARITE = 0.075
-PS_TOTAL = PS_CSG + PS_CRDS + PS_SOLIDARITE  # 0.172
-PS_CSG_DEDUCTIBLE_IR = 0.068  # part de CSG déductible du revenu imposable
+PS_TOTAL = PS_CSG + PS_CRDS + PS_SOLIDARITE  # 0.186
+PS_CSG_DEDUCTIBLE_IR = 0.068  # inchangé — le +1.4% est non déductible
 
 # --- Impôt sur le revenu (barème 2026 sur revenus 2025) ---
 IR_BAREME = [

@@ -168,7 +168,7 @@ def net_to_gross(net: float) -> float:
 # ---------------------------------------------------------------------------
 
 def calc_ps_patrimoine(bic: float) -> dict:
-    """17.2% social levies on BIC (patrimoine regime)."""
+    """Social levies on BIC (patrimoine regime) at PS_TOTAL rate."""
     csg = bic * PS_CSG
     crds = bic * PS_CRDS
     solidarite = bic * PS_SOLIDARITE
@@ -243,7 +243,7 @@ def _abattement_10(salaire_net_imposable: float) -> float:
 # ---------------------------------------------------------------------------
 
 def scenario_no_salary(resultat: float) -> dict:
-    """No salary: full BIC taxed at 17.2% patrimoine + IR."""
+    """No salary: full BIC taxed at PS patrimoine + IR."""
     bic = resultat  # entire result = BIC for the foyer
     ps = calc_ps_patrimoine(bic)
 

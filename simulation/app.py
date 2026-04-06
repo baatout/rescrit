@@ -21,12 +21,18 @@ from simulation.engine import (
     _salariale_rate_below_pass,
     _salariale_rate_above_pass,
 )
-from simulation.constants import PASS, ASSIETTE_CSG_COEFF
+from simulation.constants import PASS, ASSIETTE_CSG_COEFF, PS_CSG, PS_CRDS, PS_SOLIDARITE, PS_TOTAL
 from simulation.sankey import build_sankey_no_salary, build_sankey_with_salary
 
 st.set_page_config(page_title="SAS IR — Simulateur", layout="wide")
 st.title("SAS IR — Simulateur salaire / BIC")
-st.caption("Beluga Paris — Optimisation rémunération président (2025)")
+st.caption("Beluga Paris — Optimisation rémunération président (2026)")
+
+# Derived labels from constants (single source of truth)
+PS_TOTAL_PCT = f"{PS_TOTAL:.1%}".replace(".", ",")
+PS_CSG_PCT = f"{PS_CSG:.1%}".replace(".", ",")
+PS_CRDS_PCT = f"{PS_CRDS:.1%}".replace(".", ",")
+PS_SOL_PCT = f"{PS_SOLIDARITE:.1%}".replace(".", ",")
 
 # ---------------------------------------------------------------------------
 # Sidebar inputs
@@ -127,14 +133,14 @@ with tab_compare:
             key="ns_bic")
 
         ps = s["ps"]
-        metric_with_detail("PS 17,2%", fmt(ps["total"]),
+        metric_with_detail(f"PS {PS_TOTAL_PCT}", fmt(ps["total"]),
             f"Assiette = BIC = {fmt(s['bic'])}\n\n"
             f"| Contribution | Taux | Montant |\n"
             f"|---|---|---|\n"
-            f"| CSG | 9,2% | {fmt(ps['csg'])} |\n"
-            f"| CRDS | 0,5% | {fmt(ps['crds'])} |\n"
-            f"| Prélèvement de solidarité | 7,5% | {fmt(ps['solidarite'])} |\n"
-            f"| **Total** | **17,2%** | **{fmt(ps['total'])}** |",
+            f"| CSG | {PS_CSG_PCT} | {fmt(ps['csg'])} |\n"
+            f"| CRDS | {PS_CRDS_PCT} | {fmt(ps['crds'])} |\n"
+            f"| Prélèvement de solidarité | {PS_SOL_PCT} | {fmt(ps['solidarite'])} |\n"
+            f"| **Total** | **{PS_TOTAL_PCT}** | **{fmt(ps['total'])}** |",
             key="ns_ps")
 
         ir = s["ir"]
@@ -237,14 +243,14 @@ with tab_compare:
             key="ws_bic")
 
         ps_w = sw["ps"]
-        metric_with_detail("PS 17,2% (sur BIC)", fmt(ps_w["total"]),
+        metric_with_detail(f"PS {PS_TOTAL_PCT} (sur BIC)", fmt(ps_w["total"]),
             f"Assiette = BIC résiduel = {fmt(sw['bic'])}\n\n"
             f"| Contribution | Taux | Montant |\n"
             f"|---|---|---|\n"
-            f"| CSG | 9,2% | {fmt(ps_w['csg'])} |\n"
-            f"| CRDS | 0,5% | {fmt(ps_w['crds'])} |\n"
-            f"| Prélèvement de solidarité | 7,5% | {fmt(ps_w['solidarite'])} |\n"
-            f"| **Total** | **17,2%** | **{fmt(ps_w['total'])}** |",
+            f"| CSG | {PS_CSG_PCT} | {fmt(ps_w['csg'])} |\n"
+            f"| CRDS | {PS_CRDS_PCT} | {fmt(ps_w['crds'])} |\n"
+            f"| Prélèvement de solidarité | {PS_SOL_PCT} | {fmt(ps_w['solidarite'])} |\n"
+            f"| **Total** | **{PS_TOTAL_PCT}** | **{fmt(ps_w['total'])}** |",
             key="ws_ps")
 
         ir_w = sw["ir"]

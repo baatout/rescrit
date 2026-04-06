@@ -38,7 +38,7 @@ Madame, Monsieur,
 
 La société Beluga Paris, agissant par son représentant légal, M. Mohamed Amine BAATOUT, saisit l'administration fiscale d'une **demande de prise de position formelle** en application de l'article L 80 B 1° du livre des procédures fiscales.
 
-Cette demande porte sur le régime des prélèvements sociaux applicables à la quote-part de BIC revenant à M. BAATOUT au titre de l'exercice clos le 30 septembre 2025, et plus précisément sur la **conformité constitutionnelle** de l'application du prélèvement de solidarité de 7,5 % (art. 235 ter du CGI) à des bénéfices issus du travail personnel.
+Cette demande porte sur le régime des prélèvements sociaux applicables à la quote-part de BIC revenant à M. BAATOUT au titre de l'exercice clos le 30 septembre 2026, et plus précisément sur la **conformité constitutionnelle** de l'application du prélèvement de solidarité de 7,5 % (art. 235 ter du CGI) à des bénéfices issus du travail personnel.
 
 ---
 
@@ -50,7 +50,7 @@ La SAS Beluga Paris (SIREN 910 938 026, RCS de Paris) a son siège social au 229
 
 **Régime fiscal.** La société a opté pour le régime fiscal des sociétés de personnes en application de l'article 239 bis AB du CGI, avec effet au 1er octobre 2024 (**Pièce 5**). Les bénéfices sont imposés entre les mains des associés dans la catégorie des BIC.
 
-**Rémunération.** Le président n'a perçu aucune rémunération au titre de son mandat social pour l'exercice clos le 30 septembre 2025. Aucune déclaration sociale nominative (DSN) n'a été établie.
+**Rémunération.** Le président n'a perçu aucune rémunération au titre de son mandat social pour l'exercice clos le 30 septembre 2026. Aucune déclaration sociale nominative (DSN) n'a été établie.
 
 ---
 
