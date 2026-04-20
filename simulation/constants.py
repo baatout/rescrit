@@ -46,6 +46,9 @@ CSG_DEDUCTIBLE = 0.068  # déductible de l'IR
 CSG_NON_DEDUCTIBLE = 0.024  # non déductible
 CRDS_SALAIRE = 0.005  # non déductible
 # Pas de chômage pour président de SAS
+# Chômage patronale (salariée classique, pas mandataire social)
+PATRONALE_CHOMAGE = 0.0405
+PATRONALE_AGS = 0.0020
 
 # --- Prélèvements sociaux patrimoniaux (LFSS 2026) ---
 # CSG patrimoine: 10.6% pour revenus du capital (BIC SAS IR inclus)
@@ -59,6 +62,11 @@ PS_CSG_DEDUCTIBLE_IR = 0.068  # inchangé — le +1.4% est non déductible
 # --- JEI (Jeune Entreprise Innovante) ---
 JEI_SALARY_CAP = 4.5 * SMIC_ANNUEL  # plafond rémunération annuelle pour exonération (~97 300 €)
 JEI_EXONERATION_CAP = 5 * PASS  # plafond annuel exonération par établissement (235 500 €)
+JEI_RD_THRESHOLD = 0.20  # 20% des charges déductibles (depuis 2025)
+
+# --- CIR (Crédit d'Impôt Recherche) ---
+CIR_RATE = 0.30  # 30% jusqu'à 100M€
+CIR_FORFAIT_FONCTIONNEMENT = 0.40  # 40% forfait (depuis fév. 2025, était 43%)
 
 # --- Impôt sur le revenu (barème 2026 sur revenus 2025) ---
 IR_BAREME = [

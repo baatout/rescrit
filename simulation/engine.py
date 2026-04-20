@@ -46,6 +46,11 @@ from simulation.constants import (
     SEUIL_AF,
     SEUIL_MALADIE,
     JEI_SALARY_CAP,
+    JEI_RD_THRESHOLD,
+    CIR_RATE,
+    CIR_FORFAIT_FONCTIONNEMENT,
+    PATRONALE_CHOMAGE,
+    PATRONALE_AGS,
 )
 
 
@@ -111,6 +116,48 @@ def calc_patronales_jei(gross: float) -> dict:
     result["exoneration_jei"] = exoneration
     result["total"] -= exoneration
     return result
+
+
+def _add_chomage(pat: dict, gross: float) -> dict:
+    """Add chômage + AGS to a patronales dict (for regular employees, not mandataires)."""
+    result = dict(pat)
+    result["chomage"] = gross * PATRONALE_CHOMAGE
+    result["ags"] = gross * PATRONALE_AGS
+    result["total"] += result["chomage"] + result["ags"]
+    return result
+
+
+def calc_patronales_employee(gross: float) -> dict:
+    """Regular employee (not mandataire) — includes chômage + AGS."""
+    return _add_chomage(calc_patronales(gross), gross)
+
+
+def calc_patronales_employee_jei(gross: float) -> dict:
+    """Regular employee with JEI exoneration — includes chômage + AGS."""
+    return _add_chomage(calc_patronales_jei(gross), gross)
+
+
+# ---------------------------------------------------------------------------
+# CIR (Crédit d'Impôt Recherche)
+# ---------------------------------------------------------------------------
+
+def calc_cir(gross_rd: float, patronales_rd: dict) -> dict:
+    """CIR on R&D personnel. Only CIR-eligible patronales (after JEI exoneration)."""
+    # Eligible: AT/MP, RC T1/T2, CEG T1/T2, chômage, AGS
+    # NOT eligible: CSA, FNAL, formation, apprentissage (nor maladie/vieillesse/AF — zeroed by JEI)
+    eligible_keys = ["atmp", "retraite_comp_t1", "retraite_comp_t2",
+                     "ceg_t1", "ceg_t2", "chomage", "ags"]
+    eligible_pat = sum(patronales_rd.get(k, 0) for k in eligible_keys)
+    base = gross_rd + eligible_pat
+    forfait = base * CIR_FORFAIT_FONCTIONNEMENT
+    cir = (base + forfait) * CIR_RATE
+    return {
+        "base_personnel": base,
+        "eligible_patronales": eligible_pat,
+        "forfait": forfait,
+        "total_eligible": base + forfait,
+        "cir": cir,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -425,5 +472,152 @@ def compute_curve(resultat: float, n_points: int = 200) -> list[dict]:
             "taux_effectif": s["taux_effectif"],
             "cotisations_sociales": s["patronales"]["total"] + s["salariales"]["total"] + s["ps"]["total"],
             "ir": s["ir"]["ir"],
+        })
+    return points
+
+
+# ---------------------------------------------------------------------------
+# Split scenario: Amine (président, non-R&D) + Nesrine (salariée, 100% R&D)
+# ---------------------------------------------------------------------------
+
+_EMPTY_PAT = {"total": 0, "chomage": 0, "ags": 0}
+_EMPTY_SAL = {"total": 0, "net_received": 0, "net_imposable": 0}
+
+
+def scenario_split(resultat: float, net_amine: float, net_nesrine: float,
+                   autres_charges: float = 0) -> dict:
+    """Split salary: Amine (normal) + Nesrine (JEI + chômage). CIR on Nesrine."""
+    # Amine — président, no chômage
+    if net_amine > 0:
+        gross_a = net_to_gross(net_amine)
+        pat_a = calc_patronales(gross_a)
+        sal_a = calc_salariales(gross_a)
+        cout_a = gross_a + pat_a["total"]
+        abat_a = _abattement_10(sal_a["net_imposable"])
+    else:
+        gross_a, pat_a, sal_a, cout_a, abat_a = 0, _EMPTY_PAT, _EMPTY_SAL, 0, 0
+
+    # Nesrine — salariée, JEI, chômage + AGS
+    if net_nesrine > 0:
+        gross_n = net_to_gross(net_nesrine)
+        pat_n = calc_patronales_employee_jei(gross_n)
+        sal_n = calc_salariales(gross_n)
+        cout_n = gross_n + pat_n["total"]
+        abat_n = _abattement_10(sal_n["net_imposable"])
+        cir = calc_cir(gross_n, pat_n)
+    else:
+        gross_n, pat_n, sal_n, cout_n, abat_n = 0, _EMPTY_PAT, _EMPTY_SAL, 0, 0
+        cir = {"base_personnel": 0, "eligible_patronales": 0, "forfait": 0, "total_eligible": 0, "cir": 0}
+
+    # JEI threshold: R&D cost / total charges déductibles
+    total_charges = cout_a + cout_n + autres_charges
+    rd_charges = cout_n  # Nesrine's full cost (actual, not forfait)
+    jei_ratio = rd_charges / total_charges if total_charges > 0 else 0
+
+    # BIC
+    bic = max(0, resultat - cout_a - cout_n)
+    ps = calc_ps_patrimoine(bic)
+
+    # IR — both salaries get 10% abattement
+    sal_imposable = 0
+    if net_amine > 0:
+        sal_imposable += sal_a["net_imposable"] - abat_a
+    if net_nesrine > 0:
+        sal_imposable += sal_n["net_imposable"] - abat_n
+    bic_imposable = bic - ps["csg_deductible_ir"]
+    revenu_imposable = max(0, sal_imposable + bic_imposable)
+    ir = calc_ir(revenu_imposable)
+
+    # CIR imputed on IR
+    ir_before_cir = ir["ir"]
+    ir_after_cir = max(0, ir_before_cir - cir["cir"])
+    cir_used = ir_before_cir - ir_after_cir
+    cir_restant = cir["cir"] - cir_used
+
+    net_en_poche = (sal_a.get("net_received", 0) + sal_n.get("net_received", 0)
+                    + bic - ps["total"] - ir_after_cir)
+    total_prelev = (pat_a["total"] + sal_a["total"] + pat_n["total"] + sal_n["total"]
+                    + ps["total"] + ir_after_cir)
+
+    return {
+        "resultat": resultat,
+        "amine": {"net": net_amine, "gross": gross_a, "patronales": pat_a,
+                  "salariales": sal_a, "cout": cout_a, "abattement": abat_a},
+        "nesrine": {"net": net_nesrine, "gross": gross_n, "patronales": pat_n,
+                    "salariales": sal_n, "cout": cout_n, "abattement": abat_n},
+        "cir": cir,
+        "cir_used": cir_used,
+        "cir_restant": cir_restant,
+        "jei_ratio": jei_ratio,
+        "jei_qualified": jei_ratio >= JEI_RD_THRESHOLD,
+        "autres_charges": autres_charges,
+        "bic": bic,
+        "ps": ps,
+        "ir": ir,
+        "ir_before_cir": ir_before_cir,
+        "ir_after_cir": ir_after_cir,
+        "net_en_poche": net_en_poche,
+        "total_prelevements": total_prelev,
+        "taux_effectif": total_prelev / resultat if resultat > 0 else 0,
+    }
+
+
+def find_optimal_split(resultat: float, net_amine: float,
+                       autres_charges: float = 0) -> dict:
+    """Optimize Nesrine's salary (Amine fixed) to maximize net_en_poche."""
+    # Max feasible for Nesrine given Amine's cost
+    if net_amine > 0:
+        gross_a = net_to_gross(net_amine)
+        cout_a = gross_a + calc_patronales(gross_a)["total"]
+    else:
+        cout_a = 0
+    remaining = resultat - cout_a
+    if remaining <= 0:
+        return {"optimal_net_nesrine": 0,
+                "scenario": scenario_split(resultat, net_amine, 0, autres_charges)}
+
+    max_n = _max_feasible_net(remaining, calc_patronales_employee_jei)
+    if max_n <= 0:
+        return {"optimal_net_nesrine": 0,
+                "scenario": scenario_split(resultat, net_amine, 0, autres_charges)}
+
+    def neg_net(x):
+        return -scenario_split(resultat, net_amine, x, autres_charges)["net_en_poche"]
+
+    result = minimize_scalar(neg_net, bounds=(0, max_n), method="bounded",
+                             options={"xatol": 10, "maxiter": 200})
+    candidates = [
+        (0, scenario_split(resultat, net_amine, 0, autres_charges)["net_en_poche"]),
+        (result.x, scenario_split(resultat, net_amine, result.x, autres_charges)["net_en_poche"]),
+        (max_n, scenario_split(resultat, net_amine, max_n, autres_charges)["net_en_poche"]),
+    ]
+    best_n, _ = max(candidates, key=lambda c: c[1])
+    return {"optimal_net_nesrine": best_n,
+            "scenario": scenario_split(resultat, net_amine, best_n, autres_charges)}
+
+
+def compute_curve_split(resultat: float, net_amine: float,
+                        autres_charges: float = 0, n_points: int = 200) -> list[dict]:
+    """Sweep Nesrine's salary for charting (Amine fixed)."""
+    if net_amine > 0:
+        gross_a = net_to_gross(net_amine)
+        cout_a = gross_a + calc_patronales(gross_a)["total"]
+    else:
+        cout_a = 0
+    remaining = resultat - cout_a
+    max_n = _max_feasible_net(max(0, remaining), calc_patronales_employee_jei) if remaining > 0 else 0
+
+    points = []
+    step = max_n / n_points if max_n > 0 else 0
+    for i in range(n_points + 1):
+        net_n = i * step
+        s = scenario_split(resultat, net_amine, net_n, autres_charges)
+        points.append({
+            "salaire_nesrine": net_n,
+            "net_en_poche": s["net_en_poche"],
+            "ir_after_cir": s["ir_after_cir"],
+            "cir": s["cir"]["cir"],
+            "jei_ratio": s["jei_ratio"],
+            "taux_effectif": s["taux_effectif"],
         })
     return points
